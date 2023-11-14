@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.0.003",
+    "version": "0.0.004",
     "name": "Game off",
     "description": "",
     "author": "",
@@ -207,13 +207,60 @@
         "name": "Tempno",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Tempback.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Tempback",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Tempabout.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Tempabout",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "bottomMargin": 10,
+      "height": 32,
+      "leftMargin": 10,
+      "name": "CameraUI_Box",
+      "rightMargin": 10,
+      "texture": "Boxoutine2",
+      "tiled": false,
+      "topMargin": 10,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [
+        {
+          "folded": true,
+          "name": "WindowBox",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": []
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "CameraUI_Box"
+      }
+    ]
   },
   "objectsGroups": [
     {
@@ -224,9 +271,6 @@
         },
         {
           "name": "Options"
-        },
-        {
-          "name": "Credits"
         },
         {
           "name": "Ouit"
@@ -245,6 +289,12 @@
         },
         {
           "name": "No"
+        },
+        {
+          "name": "Back"
+        },
+        {
+          "name": "About"
         }
       ]
     }
@@ -271,7 +321,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.07929689138667464,
+        "zoomFactor": 0.18169065978486354,
         "windowMask": false
       },
       "objectsGroups": [
@@ -467,7 +517,7 @@
           "depth": 1,
           "height": 1088,
           "layer": "UI",
-          "name": "CameraUIbox",
+          "name": "CameraUI_Box",
           "persistentUuid": "f3558875-e469-41f5-8b5e-551731de3c79",
           "width": 1920,
           "x": 0,
@@ -490,7 +540,7 @@
           "depth": 1,
           "height": 1080,
           "layer": "UI",
-          "name": "CameraUIbox",
+          "name": "CameraUI_Box",
           "persistentUuid": "0009614d-6e1e-4bc2-8409-535ebfafb674",
           "width": 1920,
           "x": -5952,
@@ -512,13 +562,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 192,
+          "height": 128,
           "layer": "UI",
           "name": "Resume",
           "persistentUuid": "ccc49269-f61c-42f4-aea9-358a9fbaec51",
-          "width": 448,
+          "width": 320,
           "x": -5760,
-          "y": -1728,
+          "y": -1664,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -528,11 +578,11 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 192,
+          "height": 128,
           "layer": "UI",
           "name": "Main_Menu",
           "persistentUuid": "655646bd-dd96-4865-b831-95424b275462",
-          "width": 448,
+          "width": 320,
           "x": -5760,
           "y": -1344,
           "zOrder": 10,
@@ -546,7 +596,7 @@
           "depth": 1,
           "height": 1080,
           "layer": "UI",
-          "name": "CameraUIbox",
+          "name": "CameraUI_Box",
           "persistentUuid": "90d9389e-194b-4643-afa2-cacae50c4102",
           "width": 1920,
           "x": -3392,
@@ -568,13 +618,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 256,
+          "height": 128,
           "layer": "UI",
           "name": "Yes",
           "persistentUuid": "ebc1b271-0d8b-4862-9770-23e1999de283",
-          "width": 512,
-          "x": -3072,
-          "y": -1408,
+          "width": 320,
+          "x": -3008,
+          "y": -1280,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -584,14 +634,29 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 256,
+          "height": 128,
           "layer": "UI",
           "name": "No",
           "persistentUuid": "06e3862e-fdfa-4c5c-af61-f66af260dedf",
-          "width": 512,
-          "x": -2368,
-          "y": -1408,
+          "width": 320,
+          "x": -2304,
+          "y": -1280,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "AreYouSure_Text",
+          "persistentUuid": "03102b5c-740d-4d85-b3c7-6bdfbd3bd567",
+          "width": 0,
+          "x": -2880,
+          "y": -1600,
+          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1060,29 +1125,6 @@
           ]
         },
         {
-          "assetStoreId": "",
-          "bottomMargin": 10,
-          "height": 32,
-          "leftMargin": 10,
-          "name": "CameraUIbox",
-          "rightMargin": 10,
-          "texture": "Boxoutine2",
-          "tiled": false,
-          "topMargin": 10,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 32,
-          "variables": [
-            {
-              "folded": true,
-              "name": "WindowBox",
-              "type": "number",
-              "value": 0
-            }
-          ],
-          "effects": [],
-          "behaviors": []
-        },
-        {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Resume",
@@ -1369,6 +1411,27 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "AreYouSure_Text",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Are you sure you want to quit? \nYour progress will be lost.",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -1410,7 +1473,7 @@
             "objectName": "Pause_BG"
           },
           {
-            "objectName": "CameraUIbox"
+            "objectName": "AreYouSure_Text"
           }
         ]
       },
@@ -1484,7 +1547,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "CameraUIbox"
+                "CameraUI_Box"
               ]
             },
             {
@@ -1522,6 +1585,7 @@
               "colorG": 117,
               "colorR": 65,
               "creationTime": 0,
+              "folded": true,
               "name": "Player Controls",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -1837,7 +1901,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "UI/Pause",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1862,7 +1925,7 @@
                     "value": "VarObjet"
                   },
                   "parameters": [
-                    "CameraUIbox",
+                    "CameraUI_Box",
                     "WindowBox",
                     "=",
                     "1"
@@ -1912,7 +1975,7 @@
                   },
                   "parameters": [
                     "",
-                    "CameraUIbox",
+                    "CameraUI_Box",
                     "",
                     "\"UI\"",
                     ""
@@ -1949,7 +2012,7 @@
                     "value": "VarObjet"
                   },
                   "parameters": [
-                    "CameraUIbox",
+                    "CameraUI_Box",
                     "WindowBox",
                     "=",
                     "0"
@@ -1973,7 +2036,7 @@
                   },
                   "parameters": [
                     "",
-                    "CameraUIbox",
+                    "CameraUI_Box",
                     "",
                     "\"UI\"",
                     ""
@@ -1998,7 +2061,7 @@
                     "value": "VarObjet"
                   },
                   "parameters": [
-                    "CameraUIbox",
+                    "CameraUI_Box",
                     "WindowBox",
                     "=",
                     "2"
@@ -2022,7 +2085,7 @@
                   },
                   "parameters": [
                     "",
-                    "CameraUIbox",
+                    "CameraUI_Box",
                     "",
                     "\"UI\"",
                     ""
@@ -2065,7 +2128,7 @@
                     "value": "VarObjet"
                   },
                   "parameters": [
-                    "CameraUIbox",
+                    "CameraUI_Box",
                     "WindowBox",
                     "=",
                     "1"
@@ -2089,7 +2152,7 @@
                   },
                   "parameters": [
                     "",
-                    "CameraUIbox",
+                    "CameraUI_Box",
                     "",
                     "\"UI\"",
                     ""
@@ -2325,6 +2388,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
@@ -2341,14 +2408,14 @@
       "uiSettings": {
         "grid": true,
         "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
+        "gridWidth": 64,
+        "gridHeight": 64,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.49138775453293565,
+        "zoomFactor": 0.1440493154925032,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2362,9 +2429,9 @@
           "layer": "UI_UX",
           "name": "GameStart",
           "persistentUuid": "9dec7bb2-94c1-4c24-ac1e-821055560424",
-          "width": 352,
+          "width": 320,
           "x": 192,
-          "y": 224,
+          "y": 192,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -2378,10 +2445,10 @@
           "layer": "UI_UX",
           "name": "Options",
           "persistentUuid": "1786fb6d-6abb-4944-9995-616c0b1b01a9",
-          "width": 352,
+          "width": 320,
           "x": 192,
-          "y": 416,
-          "zOrder": 2,
+          "y": 384,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2392,12 +2459,12 @@
           "depth": 1,
           "height": 128,
           "layer": "UI_UX",
-          "name": "Credits",
+          "name": "About",
           "persistentUuid": "62256b51-eb26-46d7-ab94-b44cb082219d",
-          "width": 352,
+          "width": 320,
           "x": 192,
-          "y": 608,
-          "zOrder": 3,
+          "y": 576,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2410,10 +2477,10 @@
           "layer": "UI_UX",
           "name": "Ouit",
           "persistentUuid": "6074bac9-e79a-453a-921a-64c5f9bc288c",
-          "width": 352,
+          "width": 320,
           "x": 192,
-          "y": 800,
-          "zOrder": 4,
+          "y": 768,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2430,6 +2497,155 @@
           "x": 1600,
           "y": 992,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1088,
+          "layer": "UI_UX",
+          "name": "CameraUI_Box",
+          "persistentUuid": "d7c13c11-aa66-4adb-ba5e-413544bc1ce9",
+          "width": 1920,
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "WindowBox",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1088,
+          "layer": "UI_UX",
+          "name": "CameraUI_Box",
+          "persistentUuid": "1427c3c4-f471-4801-912a-7b137adf42ce",
+          "width": 1920,
+          "x": -1984,
+          "y": -1152,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "WindowBox",
+              "type": "number",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "layer": "UI_UX",
+          "name": "Back",
+          "persistentUuid": "ee16bcfa-0121-471d-971b-d2a201ade059",
+          "width": 320,
+          "x": -448,
+          "y": -256,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "layer": "UI_UX",
+          "name": "Options_Title",
+          "persistentUuid": "16238a71-9dc4-4002-812d-88f1c5f0bea9",
+          "width": 340,
+          "x": -1172,
+          "y": -1024,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1088,
+          "layer": "UI_UX",
+          "name": "CameraUI_Box",
+          "persistentUuid": "9716079a-ce17-43ab-ab00-03ba2af93ec8",
+          "width": 1920,
+          "x": 0,
+          "y": -1152,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "WindowBox",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "layer": "UI_UX",
+          "name": "About_Title",
+          "persistentUuid": "af1a9792-0ac6-4512-9ff9-2229657cee4a",
+          "width": 260,
+          "x": 828,
+          "y": -1024,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "layer": "UI_UX",
+          "name": "Back",
+          "persistentUuid": "7991ef57-5dab-4869-8193-458570374114",
+          "width": 320,
+          "x": 1536,
+          "y": -256,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 384,
+          "layer": "UI_UX",
+          "name": "Temp_Logo",
+          "persistentUuid": "80f7fb1c-83fc-43ef-a711-eaf87afb223a",
+          "width": 1024,
+          "x": 768,
+          "y": 320,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2583,7 +2799,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Credits",
+          "name": "About",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -2602,17 +2818,17 @@
           ],
           "animations": [
             {
-              "name": "Tempcredits",
+              "name": "Tempabout",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGxJREFUaEPt1LEVABAUBEH60H+bFIBg8xGL9s2/udfaw7sKTGHeKoT5XIswwrQhJYYYYloBYlovG0MMMa0AMa2XjSGGmFaAmNbLxhBDTCtATOtlY4ghphUgpvWyMcQQ0woQ03rZGGKIaQU+vw9hXUbhgkiBHQAAAABJRU5ErkJggg==\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAT9JREFUaEPtmFsOxCAIRaf7X/Q0TcaEMjwuKolG+tligeNFaK9PXSKBq7jIBAqMoowCMwDm+1t7FEQv2SOhPELQwBwLpFWWBOZ4KJpiHjBeia3S5dNi5QDSHCWRTIt3RTCRZCO2ob3ZDQwHUWCE7U6DIh2+qc5ALaMxoHag27fZaqXkjQoURrPliVsjiDWmvN4zC4wXJH3uDZXWGEGfSYrRVBRW1www2i7T+y0wLZmWsKWYkYM3HYwUOOJUA8NLo20UogbELy2PkH1UMREwUnlRfxqUJ5klwXgflzNg8uSRMkFgWR3IO9jNw1fbrZ77XMbaeICODaNgrBz+gCJf1x5ptHa993ggrY4jtWGvU5rzjdU6rYOwa2jaaVHvTLFTjl2x7vLfpSu5kUUFRqFXYApMrLBKMaWYUkyMQCkmxusGbEVfIeY0dDMAAAAASUVORK5CYII=\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempcredits\"],\"name\":\"Tempcredits\"}}",
+                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGxJREFUaEPt1LEVABAUBEH60H+bFIBg8xGL9s2/udfaw7sKTGHeKoT5XIswwrQhJYYYYloBYlovG0MMMa0AMa2XjSGGmFaAmNbLxhBDTCtATOtlY4ghphUgpvWyMcQQ0woQ03rZGGKIaQU+vw9hXUbhgkiBHQAAAABJRU5ErkJggg==\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAT5JREFUaEPtluEOAjEIg/X9H1qz6JJlAVrOkaDWPybaO+Cjg91v+pgE7uJiExAYxxkCIzC5oYEc83i/DulyUb9AjQoWGKeJA8yAN7+79bosL8YxArPZYe1GWWc+tGBZXpFjMmDKEgTgyuIKTPIeY3Ui6k5Z57o5JgPm56CMZnhHad5f9oZZ+r8B4xUa/T4BMus/0mYge82LGk4vwYwDGGDeTdkqgo3NxKULZoV7clcGLDOPGM3ImdV5WrZuqMuCsWxquWS/A3nPMfHbOybq0p48czlk3OEdzZnLkXli2Yfp2Poce9QiUFcAo8GPhj48OtH6ZTYC0rDDN7omzP8Y163OYTcjBWlNEBVNvfCAaN1gK6SjhaM8O4Ip3zgIStngYgJ31xwfWt0LZvMTGIeUwAgMe4heOjlGjpFjcgQc9RPjD14hd0YCDAAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempabout\"],\"name\":\"Tempabout\"}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Tempcredits",
+                      "image": "Tempabout",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2744,25 +2960,182 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Back",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Tempback",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"Tempquit\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGxJREFUaEPt1LEVABAUBEH60H+bFIBg8xGL9s2/udfaw7sKTGHeKoT5XIswwrQhJYYYYloBYlovG0MMMa0AMa2XjSGGmFaAmNbLxhBDTCtATOtlY4ghphUgpvWyMcQQ0woQ03rZGGKIaQU+vw9hXUbhgkiBHQAAAABJRU5ErkJggg==\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAStJREFUaEPtmMEOAiEMRN3//2gNB0xtWpjJkoLZ8WKMhW0f0yl6vfQKCVziEhMQmEQZAiMwnGlIMVKMFMMRkGI4XiOPebutHuVHWbEdSv++fX48GA+lCUdgEggVYCqeARtN1B42wUg98OZk4F+AsTVVecvRYOwkqgLSD+F4MA1IZQt5MDsP59spXhWr/YUpkokl7YsPH4HpY7q92zh/8etPjfbya0cZ7lBpms8MTHSH8V6Q3XsYKPYQ2HW8HIAVKBibbAQG2WemFq/KavP/yQ8tyHuPNejohNkJE8WzewA6wEMQMNHvJu8riIoYxdhJtaW1MsP0RcxkHU0U9MSRuHJjvjtJPMBMXbO/N2bg8R5YFHlcQovqur2NwCQIBUZguO6SYqQYKYYjkER/APRLQCHHho7OAAAAAElFTkSuQmCC\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[]}}\",\"resourceNames\":[\"Tempback\"],\"name\":\"Tempback\"}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Tempback",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 70,
+                            "y": 0
+                          },
+                          {
+                            "x": 70,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Options_Title",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Options",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 90,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "About_Title",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "About",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 90,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Temp_Logo",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "SNOW GAME!\n(NAME WIP)",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 150,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "GameStart"
+            "folderName": "Buttons",
+            "children": [
+              {
+                "objectName": "Ouit"
+              },
+              {
+                "objectName": "Back"
+              },
+              {
+                "objectName": "About"
+              },
+              {
+                "objectName": "Options"
+              },
+              {
+                "objectName": "GameStart"
+              }
+            ]
           },
           {
-            "objectName": "Options"
-          },
-          {
-            "objectName": "Credits"
-          },
-          {
-            "objectName": "Ouit"
-          },
-          {
-            "objectName": "Version"
+            "folderName": "Text",
+            "children": [
+              {
+                "objectName": "Options_Title"
+              },
+              {
+                "objectName": "About_Title"
+              },
+              {
+                "objectName": "Version"
+              },
+              {
+                "objectName": "Temp_Logo"
+              }
+            ]
           }
         ]
       },
@@ -2790,60 +3163,200 @@
                 "=",
                 "\"Ver: \"+ CurrentGameVersion::ReturnCurrentGameVersion()"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "value": "ButtonStates::ButtonFSM::IsClicked"
+                "value": "Cache"
               },
               "parameters": [
-                "GameStart",
-                "ButtonFSM",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Game Scene\"",
-                ""
+                "CameraUI_Box"
               ]
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Main Menu",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "ButtonStates::ButtonFSM::IsClicked"
-              },
-              "parameters": [
-                "Ouit",
-                "ButtonFSM",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "GameStart",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Game Scene\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Ouit",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Quit"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "CameraUI_Box",
+                    "WindowBox",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Options",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "CameraUI_Box",
+                    "",
+                    "\"UI_UX\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "CameraUI_Box",
+                    "WindowBox",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "About",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "CameraUI_Box",
+                    "",
+                    "\"UI_UX\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "CameraUI_Box",
+                    "WindowBox",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Back",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "CameraUI_Box",
+                    "",
+                    "\"UI_UX\"",
+                    ""
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Quit"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
           "type": "BuiltinCommonInstructions::Link",
