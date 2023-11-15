@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.0.004",
+    "version": "0.0.005",
     "name": "Game off",
     "description": "",
     "author": "",
@@ -225,6 +225,51 @@
         "name": "Tempabout",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Tempdoor.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Tempdoor",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image3",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Tempcollect.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Tempcollect",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Temprestart.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Temprestart",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -295,6 +340,9 @@
         },
         {
           "name": "About"
+        },
+        {
+          "name": "Restart"
         }
       ]
     }
@@ -321,7 +369,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.18169065978486354,
+        "zoomFactor": 0.1440493154925044,
         "windowMask": false
       },
       "objectsGroups": [
@@ -362,56 +410,8 @@
           "persistentUuid": "5cc99dec-ac15-4bbf-a5fb-7829106423b2",
           "width": 2040,
           "x": -332,
-          "y": 655,
+          "y": 927,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 30,
-          "layer": "",
-          "name": "Ground",
-          "persistentUuid": "195925b8-588c-45c2-8407-1f6d8d986920",
-          "width": 186,
-          "x": 361,
-          "y": 517,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 30,
-          "layer": "",
-          "name": "Ground",
-          "persistentUuid": "a3deb5b5-8ce5-4b3c-9dfa-f3f9ea22c3c5",
-          "width": 186,
-          "x": 1217,
-          "y": 267,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 30,
-          "layer": "",
-          "name": "Ground",
-          "persistentUuid": "fe861093-ce8d-44dc-831e-a0d465565289",
-          "width": 186,
-          "x": 117,
-          "y": 416,
-          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -425,8 +425,8 @@
           "name": "Snowball_Moveable",
           "persistentUuid": "d4dcdb20-e4df-4944-bc33-978730d99d8c",
           "width": 143,
-          "x": 1427,
-          "y": 349,
+          "x": 256,
+          "y": 753,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -442,7 +442,7 @@
           "persistentUuid": "c63156a1-d175-4850-9920-3d689cd3fbbc",
           "width": 390,
           "x": 1613,
-          "y": 1042,
+          "y": 1314,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -458,7 +458,7 @@
           "persistentUuid": "c85e8388-4b0a-4a64-b9d8-abfa17425682",
           "width": 243,
           "x": 1698,
-          "y": 802,
+          "y": 1074,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -472,8 +472,8 @@
           "name": "Player",
           "persistentUuid": "47211fe0-daef-43df-a809-30975a2e024f",
           "width": 0,
-          "x": 105,
-          "y": 557,
+          "x": 640,
+          "y": 832,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -499,13 +499,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 1536,
+          "height": 2624,
           "layer": "UI",
           "name": "Pause_BG",
           "persistentUuid": "e3ee022e-7e5f-4d8a-9956-f1b4f95b952d",
           "width": 5539,
           "x": -6051,
-          "y": -2240,
+          "y": -3328,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -517,8 +517,10 @@
           "depth": 1,
           "height": 1088,
           "layer": "UI",
+          "locked": true,
           "name": "CameraUI_Box",
           "persistentUuid": "f3558875-e469-41f5-8b5e-551731de3c79",
+          "sealed": true,
           "width": 1920,
           "x": 0,
           "y": 0,
@@ -584,7 +586,7 @@
           "persistentUuid": "655646bd-dd96-4865-b831-95424b275462",
           "width": 320,
           "x": -5760,
-          "y": -1344,
+          "y": -1280,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -628,7 +630,14 @@
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "Confirm",
+              "type": "number",
+              "value": 0
+            }
+          ]
         },
         {
           "angle": 0,
@@ -651,12 +660,234 @@
           "customSize": false,
           "height": 0,
           "layer": "UI",
-          "name": "AreYouSure_Text",
+          "name": "AreYouSureQuit_Text",
           "persistentUuid": "03102b5c-740d-4d85-b3c7-6bdfbd3bd567",
           "width": 0,
           "x": -2880,
           "y": -1600,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1600,
+          "layer": "",
+          "name": "Moveable_Door",
+          "persistentUuid": "5000f6f6-b0cd-4188-8b82-f2fe0ac283d7",
+          "width": 64,
+          "x": 1664,
+          "y": -640,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 192,
+          "layer": "",
+          "name": "Lose_Area",
+          "persistentUuid": "f3f6bd18-ba76-464d-9144-7cd9f1321205",
+          "width": 64,
+          "x": 0,
+          "y": 768,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Floating_Platform",
+          "persistentUuid": "7d08204e-54fa-4403-a7d0-a672e925022d",
+          "width": 192,
+          "x": 384,
+          "y": 704,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Floating_Platform",
+          "persistentUuid": "22483a9e-98d2-4fe2-a6d3-2b3df19b2c66",
+          "width": 192,
+          "x": 192,
+          "y": 448,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Floating_Platform",
+          "persistentUuid": "71c0671e-534d-424a-9ac4-0ff3f4ba90ec",
+          "width": 192,
+          "x": 1216,
+          "y": 576,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "layer": "",
+          "name": "Collectable",
+          "persistentUuid": "181ca2c7-ba22-4155-88da-3510169fda32",
+          "width": 128,
+          "x": 1216,
+          "y": 448,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "layer": "",
+          "name": "Collectable",
+          "persistentUuid": "321c55d6-acd5-4369-9c15-a03fd51645c0",
+          "width": 128,
+          "x": 448,
+          "y": 576,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "layer": "",
+          "name": "Collectable",
+          "persistentUuid": "7b16191a-64c1-45af-ab6e-88f1eb5cd699",
+          "width": 128,
+          "x": 256,
+          "y": 320,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "layer": "UI",
+          "name": "Restart",
+          "persistentUuid": "fcdac02f-4a63-49ee-85c9-57dd85540fc4",
+          "width": 320,
+          "x": -5760,
+          "y": -1472,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1080,
+          "layer": "UI",
+          "name": "CameraUI_Box",
+          "persistentUuid": "497a853d-4f58-4867-899e-17cdd220aba6",
+          "width": 1920,
+          "x": -3392,
+          "y": -3136,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "WindowBox",
+              "persistentUuid": "ec39b7ba-51b4-48ff-89da-be5c744cae29",
+              "type": "number",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "name": "AreYouSureRestart_Text",
+          "persistentUuid": "c07b277d-f51c-4df0-abf9-90800487fac2",
+          "width": 0,
+          "x": -2944,
+          "y": -2820,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "layer": "UI",
+          "name": "Yes",
+          "persistentUuid": "db375c7d-0194-4cff-a714-1a0ff1d4a7ad",
+          "width": 320,
+          "x": -3008,
+          "y": -2432,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "Confirm",
+              "type": "number",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "layer": "UI",
+          "name": "No",
+          "persistentUuid": "a58fc4d2-a930-4feb-94a9-be5d628faa0a",
+          "width": 320,
+          "x": -2294,
+          "y": -2432,
+          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -693,8 +924,8 @@
               "linearDamping": 0.1,
               "angularDamping": 0.1,
               "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
+              "layers": 16,
+              "masks": 16
             },
             {
               "name": "Platform",
@@ -720,7 +951,7 @@
               "bodyType": "Dynamic",
               "bullet": false,
               "fixedRotation": false,
-              "canSleep": true,
+              "canSleep": false,
               "shape": "Circle",
               "shapeDimensionA": 0,
               "shapeDimensionB": 0,
@@ -728,14 +959,21 @@
               "shapeOffsetY": 0,
               "polygonOrigin": "Center",
               "vertices": [],
-              "density": 0.2,
-              "friction": 5,
+              "density": 0.5,
+              "friction": 20,
               "restitution": 0.1,
               "linearDamping": 0.1,
-              "angularDamping": 0.1,
+              "angularDamping": 0,
               "gravityScale": 1,
-              "layers": 1,
-              "masks": 1
+              "layers": 16,
+              "masks": 16
+            },
+            {
+              "name": "Platform",
+              "platformType": "Jumpthru",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "yGrabOffset": 0
             }
           ],
           "animations": [
@@ -821,6 +1059,13 @@
               "gravityScale": 1,
               "layers": 17,
               "masks": 17
+            },
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "platformType": "Jumpthru",
+              "yGrabOffset": 0
             }
           ],
           "animations": [
@@ -899,13 +1144,13 @@
               "polygonOrigin": "Center",
               "vertices": [],
               "density": 5,
-              "friction": 0.3,
+              "friction": 5,
               "restitution": 0.1,
               "linearDamping": 0.1,
               "angularDamping": 0.1,
               "gravityScale": 1,
-              "layers": 1,
-              "masks": 1
+              "layers": 17,
+              "masks": 17
             },
             {
               "name": "PlatformerObject",
@@ -1274,7 +1519,14 @@
           "name": "Yes",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "Confirm",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
@@ -1416,7 +1668,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "AreYouSure_Text",
+          "name": "AreYouSureQuit_Text",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -1424,6 +1676,279 @@
           "effects": [],
           "behaviors": [],
           "string": "Are you sure you want to quit? \nYour progress will be lost.",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Moveable_Door",
+          "texture": "Tempdoor",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Static",
+              "bullet": false,
+              "fixedRotation": true,
+              "canSleep": false,
+              "shape": "Box",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 0,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 5,
+              "friction": 0,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 1,
+              "layers": 17,
+              "masks": 17
+            },
+            {
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Lose_Area",
+          "texture": "New image3",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Static",
+              "bullet": false,
+              "fixedRotation": false,
+              "canSleep": true,
+              "shape": "Box",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 0,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 0.2,
+              "friction": 5,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 1,
+              "layers": 17,
+              "masks": 17
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Floating_Platform",
+          "texture": "New image4",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Static",
+              "bullet": false,
+              "fixedRotation": true,
+              "canSleep": false,
+              "shape": "Box",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 0,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 1,
+              "friction": 0.3,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 1,
+              "layers": 1,
+              "masks": 1
+            },
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "platformType": "Jumpthru",
+              "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Collectable",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Tempcollect",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Tempcollect",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 61,
+                            "y": 0
+                          },
+                          {
+                            "x": 61,
+                            "y": 53
+                          },
+                          {
+                            "x": 0,
+                            "y": 53
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Restart",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Temprestart",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAWJJREFUaEPtl0sOwyAMRMn9D92IBZVlefwliaK4uzZgJs/DQI/RH5HA0VxkAg0GOKPBNJhYaLRjnI75CeM+CY++9ILCf2swYwwJwgT2OTged7wRjOT+UPpaYN4IZQIo60ZgysSV9pRFO1pfXkMK37nulZlSFm2A2VLfOpUczQkP2SL8akdKW8kjnN93kPMk93nqh2mTCVvqV8CsuVQIzyZJpFe4lXOoOVsuqTxLlmhNPH9mfefdl4SvMVOP5kZaC2mU9IRzE4FBRx56Ka2OBEYLd+5ANNYLJrUtrReqLJ6dS12rdTpb3wWqAsZjT5QxdOtoW21trchfFW+GqYAsMGtLIQgeEVpnNUDrmRayEWAupyBBUXtS0VZueBwWEg+u/vQ0s042uJ7HMbRz2RtxWmCUFLvPpJsRAZPV+ASUrNb/vDvAlEU+UaDBAOrZzHiiibeu2WDaMTHDtWPaMe2YGAEw+gSuCWEh0jQZCwAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Temprestart\"],\"name\":\"Temprestart\"}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Temprestart",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 70,
+                            "y": 0
+                          },
+                          {
+                            "x": 70,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "AreYouSureRestart_Text",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Are you sure you want to restart? \nYour progress will be lost.",
           "font": "",
           "textAlignment": "center",
           "characterSize": 60,
@@ -1447,6 +1972,9 @@
                 "objectName": "Resume"
               },
               {
+                "objectName": "Restart"
+              },
+              {
                 "objectName": "Main_Menu"
               },
               {
@@ -1461,6 +1989,15 @@
             "objectName": "Ground"
           },
           {
+            "objectName": "Floating_Platform"
+          },
+          {
+            "objectName": "Lose_Area"
+          },
+          {
+            "objectName": "Moveable_Door"
+          },
+          {
             "objectName": "Snowball_Moveable"
           },
           {
@@ -1473,7 +2010,13 @@
             "objectName": "Pause_BG"
           },
           {
-            "objectName": "AreYouSure_Text"
+            "objectName": "AreYouSureQuit_Text"
+          },
+          {
+            "objectName": "AreYouSureRestart_Text"
+          },
+          {
+            "objectName": "Collectable"
           }
         ]
       },
@@ -1762,12 +2305,12 @@
               "parameters": []
             },
             {
-              "colorB": 228,
-              "colorG": 176,
+              "colorB": 74,
+              "colorG": 74,
               "colorR": 74,
               "creationTime": 0,
               "folded": true,
-              "name": "Players & Platforms",
+              "name": "Players & Platforms Jumpthrough Logic",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -1780,7 +2323,7 @@
                         "value": "CollisionPoint"
                       },
                       "parameters": [
-                        "Ground",
+                        "Floating_Platform",
                         "Player.PointX(\"Platform_Above\")",
                         "Player.PointY(\"Platform_Above\")"
                       ]
@@ -1792,7 +2335,7 @@
                         "value": "Physics2::EnableLayer"
                       },
                       "parameters": [
-                        "Ground",
+                        "Floating_Platform",
                         "Physics2",
                         "1",
                         ""
@@ -1803,7 +2346,7 @@
                         "value": "Physics2::EnableMask"
                       },
                       "parameters": [
-                        "Ground",
+                        "Floating_Platform",
                         "Physics2",
                         "1",
                         ""
@@ -1820,7 +2363,7 @@
                         "value": "CollisionPoint"
                       },
                       "parameters": [
-                        "Ground",
+                        "Floating_Platform",
                         "Player.PointX(\"Platform_Below\")",
                         "Player.PointY(\"Platform_Below\")"
                       ]
@@ -1832,7 +2375,7 @@
                         "value": "Physics2::EnableLayer"
                       },
                       "parameters": [
-                        "Ground",
+                        "Floating_Platform",
                         "Physics2",
                         "1",
                         "yes"
@@ -1843,7 +2386,7 @@
                         "value": "Physics2::EnableMask"
                       },
                       "parameters": [
-                        "Ground",
+                        "Floating_Platform",
                         "Physics2",
                         "1",
                         "yes"
@@ -1855,43 +2398,306 @@
               "parameters": []
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "colorB": 255,
+              "colorG": 255,
+              "colorR": 255,
+              "creationTime": 0,
+              "name": "Snowball Logic",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
-                  "type": {
-                    "value": "Physics2::Collision"
-                  },
-                  "parameters": [
-                    "Snowball_Moveable",
-                    "Physics2",
-                    "Snowball_Static",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Physics2::SetStatic"
-                  },
-                  "parameters": [
-                    "Snowball_Moveable",
-                    "Physics2"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Physics2::LinearVelocityLength"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Physics2",
+                        ">=",
+                        "15"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Scale",
+                        "+",
+                        "0.0009"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "Snowball_Moveable",
-                    "=",
-                    "Snowball_Static.X() + 60",
-                    "=",
-                    "Snowball_Static.Y() - 90"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Physics2::Collision"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Physics2",
+                        "Snowball_Static",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Physics2::SetStatic"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Physics2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "=",
+                        "Snowball_Static.X() + 60",
+                        "=",
+                        "Snowball_Static.Y() - 90"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Game Scene\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Physics2::Collision"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Physics2",
+                        "Lose_Area",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Scale",
+                        "-",
+                        "0.5"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::Value"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Scale",
+                        "<=",
+                        "0.1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Game Scene\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CollisionPoint"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Player.PointX(\"Platform_Below\")",
+                        "Player.PointY(\"Platform_Below\")"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Physics2::SetDynamic"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Physics2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::ChangePlatformType"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Platform",
+                        "\"Jumpthru\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionPoint"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Player.PointX(\"Platform_Below\")",
+                        "Player.PointY(\"Platform_Below\")"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Physics2::SetStatic"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Physics2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::ChangePlatformType"
+                      },
+                      "parameters": [
+                        "Snowball_Moveable",
+                        "Platform",
+                        "\"Platform\""
+                      ]
+                    }
                   ]
                 }
-              ]
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Collectable",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Collectable",
+                        "Player",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Collectable",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SceneInstancesCount"
+                      },
+                      "parameters": [
+                        "",
+                        "Collectable",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Moveable_Door",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
             }
           ],
           "parameters": []
@@ -1901,6 +2707,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "UI/Pause",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1963,6 +2770,28 @@
                       "parameters": [
                         "",
                         "Escape"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Button_pressed"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "\"Start\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Button_pressed"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "\"Back\"",
+                        ""
                       ]
                     }
                   ]
@@ -2098,6 +2927,57 @@
               "conditions": [
                 {
                   "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "CameraUI_Box",
+                    "WindowBox",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Restart",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "CameraUI_Box",
+                    "",
+                    "\"UI\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Yes",
+                    "Confirm",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
                   "parameters": [
@@ -2115,6 +2995,44 @@
                   "parameters": [
                     "",
                     "\"Main Menu\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Yes",
+                    "Confirm",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Yes",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Game Scene\"",
                     ""
                   ]
                 }
@@ -2265,6 +3183,13 @@
             "includeConfig": 0
           },
           "target": "Button UI  & Cursor"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Debug"
         }
       ],
       "layers": [
@@ -2415,7 +3340,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.1440493154925032,
+        "zoomFactor": 0.1220382330370671,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3364,6 +4289,13 @@
             "includeConfig": 0
           },
           "target": "Button UI  & Cursor"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Debug"
         }
       ],
       "layers": [
@@ -3634,9 +4566,669 @@
           "parameters": []
         }
       ]
+    },
+    {
+      "associatedLayout": "Game Scene",
+      "lastChangeTimeStamp": 0,
+      "name": "Debug",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "General Debug",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "F1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.01"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Main Menu\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "F2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.01"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Game Scene\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Game Debug",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        }
+      ]
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "author": "VegeTato, arthuro555",
+      "category": "General",
+      "extensionNamespace": "",
+      "fullName": "Repeat every X seconds",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXJlcGVhdCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xNywxN0g3VjE0TDMsMThMNywyMlYxOUgxOVYxM0gxN003LDdIMTdWMTBMMjEsNkwxNywyVjVINVYxMUg3VjdaIiAvPjwvc3ZnPg==",
+      "name": "RepeatEveryXSeconds",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/repeat.svg",
+      "shortDescription": "This allows to trigger an event every X seconds.",
+      "version": "0.1.0",
+      "description": "Convenience conditions, actions and behaviors for timers to trigger a condition every X seconds.",
+      "origin": {
+        "identifier": "RepeatEveryXSeconds",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "repeat",
+        "timer",
+        "time",
+        "convenience"
+      ],
+      "authorIds": [
+        "ZgrsWuRTAkXgeuPV9bo0zuEcA2w1",
+        "IRIhkkTTl2UHhfjrLTTH5GYwkYu1"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Triggers every X seconds.",
+          "fullName": "Repeat every X seconds",
+          "functionType": "Condition",
+          "name": "Repeat",
+          "sentence": "Repeat timer _PARAM1_ every _PARAM2_ seconds",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "player",
+                    "GetArgumentAsString(\"timerName\")"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "player",
+                    "GetArgumentAsNumber(\"time\")",
+                    "GetArgumentAsString(\"timerName\")"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "player",
+                    "GetArgumentAsString(\"timerName\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The name of the timer to loop",
+              "name": "timerName",
+              "type": "string"
+            },
+            {
+              "description": "The time in seconds between each trigger",
+              "name": "time",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Triggers every X seconds X amount of times.",
+          "fullName": "Repeat every X seconds in X number",
+          "functionType": "Condition",
+          "name": "RepeatXTimes",
+          "sentence": "Repeat timer _PARAM1_ every _PARAM2_ seconds _PARAM3_ times",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "player",
+                    "GetArgumentAsString(\"timerName\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "__RepeatEveryXSeconds_.Counter[GetArgumentAsString(\"timerName\")]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "player",
+                    "GetArgumentAsNumber(\"time\")",
+                    "GetArgumentAsString(\"timerName\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "Egal"
+                      },
+                      "parameters": [
+                        "GetArgumentAsNumber(\"limit\")",
+                        "=",
+                        "-1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "__RepeatEveryXSeconds_.Counter[GetArgumentAsString(\"timerName\")]",
+                        "<",
+                        "GetArgumentAsNumber(\"limit\")"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "player",
+                    "GetArgumentAsString(\"timerName\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "__RepeatEveryXSeconds_.Counter[GetArgumentAsString(\"timerName\")]",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The name of the timer to loop",
+              "name": "timerName",
+              "type": "string"
+            },
+            {
+              "description": "The time in seconds between each trigger",
+              "name": "time",
+              "type": "expression"
+            },
+            {
+              "description": "The limit of loops",
+              "longDescription": "The condition will trigger at most this amount of times. Make it -1 for looping forever.",
+              "name": "limit",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Allows to repeat an object timer every X seconds.",
+          "fullName": "Repeat every X seconds",
+          "name": "RepeatTimer",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Behavior::PropertyTimerName()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "RepeatEveryXSeconds::RepeatTimer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Triggers every X seconds, where X is defined in the behavior properties.",
+              "fullName": "Repeat every X seconds",
+              "functionType": "Condition",
+              "name": "Repeat",
+              "sentence": "Recurring timer _PARAM1_ of _PARAM0_ has triggered",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Behavior::PropertyTimerName()",
+                        "Object.Behavior::PropertyTimerLength()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "RepeatEveryXSeconds::RepeatTimer::PropertyLimit"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "-1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "RepeatEveryXSeconds::RepeatTimer::PropertyCounter"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "<",
+                            "Object.Behavior::PropertyLimit()"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Behavior::PropertyTimerName()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "RepeatEveryXSeconds::RepeatTimer::SetPropertyCounter"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "RepeatEveryXSeconds::RepeatTimer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Pauses a recurring timer.",
+              "fullName": "Pause a recurring timer",
+              "functionType": "Action",
+              "name": "Pause",
+              "sentence": "Pause recurring timer _PARAM1_ of _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PauseObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Behavior::PropertyTimerName()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "RepeatEveryXSeconds::RepeatTimer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Resumes a paused recurring timer.",
+              "fullName": "Resume a recurring timer",
+              "functionType": "Action",
+              "name": "Resume",
+              "sentence": "Resume recurring timer _PARAM1_ of _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "UnPauseObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Behavior::PropertyTimerName()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "RepeatEveryXSeconds::RepeatTimer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Allows to trigger the recurring timer X times again.",
+              "fullName": "Reset the limit",
+              "functionType": "Action",
+              "name": "ResetLimit",
+              "sentence": "Allow to trigger the recurring timer _PARAM1_ of _PARAM0_ X times again",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "RepeatEveryXSeconds::RepeatTimer::SetPropertyCounter"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "RepeatEveryXSeconds::RepeatTimer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "MyTimer",
+              "type": "String",
+              "label": "The name of the timer to repeat",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "TimerName"
+            },
+            {
+              "value": "1",
+              "type": "Number",
+              "label": "The time between each trigger (in seconds)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "TimerLength"
+            },
+            {
+              "value": "-1",
+              "type": "Number",
+              "label": "How many times should the timer trigger? -1 for forever.",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "Limit"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "An internal counter",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "Counter"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
     {
       "author": "UlisesFreitas",
       "category": "Advanced",
