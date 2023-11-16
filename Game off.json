@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.0.005",
+    "version": "0.0.006",
     "name": "Game off",
     "description": "",
     "author": "",
@@ -297,6 +297,27 @@
       ],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Version",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Ver: 0.00.000",
+      "font": "",
+      "textAlignment": "right",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -304,6 +325,9 @@
     "children": [
       {
         "objectName": "CameraUI_Box"
+      },
+      {
+        "objectName": "Version"
       }
     ]
   },
@@ -369,7 +393,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.1440493154925044,
+        "zoomFactor": 0.2531414001298649,
         "windowMask": false
       },
       "objectsGroups": [
@@ -381,6 +405,26 @@
             },
             {
               "name": "Player"
+            }
+          ]
+        },
+        {
+          "name": "Buttons_GameScene",
+          "objects": [
+            {
+              "name": "Resume"
+            },
+            {
+              "name": "Main_Menu"
+            },
+            {
+              "name": "Yes"
+            },
+            {
+              "name": "No"
+            },
+            {
+              "name": "Restart"
             }
           ]
         }
@@ -484,7 +528,7 @@
           "customSize": true,
           "depth": 1,
           "height": 94,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "Pause",
           "persistentUuid": "cbc0dd7f-ec62-402e-bc2b-76d514fb9f0e",
           "width": 94,
@@ -500,7 +544,7 @@
           "customSize": true,
           "depth": 1,
           "height": 2624,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "Pause_BG",
           "persistentUuid": "e3ee022e-7e5f-4d8a-9956-f1b4f95b952d",
           "width": 5539,
@@ -516,7 +560,7 @@
           "customSize": true,
           "depth": 1,
           "height": 1088,
-          "layer": "UI",
+          "layer": "UI_UX",
           "locked": true,
           "name": "CameraUI_Box",
           "persistentUuid": "f3558875-e469-41f5-8b5e-551731de3c79",
@@ -541,7 +585,7 @@
           "customSize": true,
           "depth": 1,
           "height": 1080,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "CameraUI_Box",
           "persistentUuid": "0009614d-6e1e-4bc2-8409-535ebfafb674",
           "width": 1920,
@@ -565,13 +609,13 @@
           "customSize": true,
           "depth": 1,
           "height": 128,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "Resume",
           "persistentUuid": "ccc49269-f61c-42f4-aea9-358a9fbaec51",
           "width": 320,
           "x": -5760,
           "y": -1664,
-          "zOrder": 9,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -581,13 +625,13 @@
           "customSize": true,
           "depth": 1,
           "height": 128,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "Main_Menu",
           "persistentUuid": "655646bd-dd96-4865-b831-95424b275462",
           "width": 320,
           "x": -5760,
           "y": -1280,
-          "zOrder": 10,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -597,7 +641,7 @@
           "customSize": true,
           "depth": 1,
           "height": 1080,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "CameraUI_Box",
           "persistentUuid": "90d9389e-194b-4643-afa2-cacae50c4102",
           "width": 1920,
@@ -621,7 +665,7 @@
           "customSize": true,
           "depth": 1,
           "height": 128,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "Yes",
           "persistentUuid": "ebc1b271-0d8b-4862-9770-23e1999de283",
           "width": 320,
@@ -644,7 +688,7 @@
           "customSize": true,
           "depth": 1,
           "height": 128,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "No",
           "persistentUuid": "06e3862e-fdfa-4c5c-af61-f66af260dedf",
           "width": 320,
@@ -659,7 +703,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "AreYouSureQuit_Text",
           "persistentUuid": "03102b5c-740d-4d85-b3c7-6bdfbd3bd567",
           "width": 0,
@@ -803,13 +847,13 @@
           "customSize": true,
           "depth": 1,
           "height": 128,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "Restart",
           "persistentUuid": "fcdac02f-4a63-49ee-85c9-57dd85540fc4",
           "width": 320,
           "x": -5760,
           "y": -1472,
-          "zOrder": 20,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -819,7 +863,7 @@
           "customSize": true,
           "depth": 1,
           "height": 1080,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "CameraUI_Box",
           "persistentUuid": "497a853d-4f58-4867-899e-17cdd220aba6",
           "width": 1920,
@@ -842,7 +886,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "AreYouSureRestart_Text",
           "persistentUuid": "c07b277d-f51c-4df0-abf9-90800487fac2",
           "width": 0,
@@ -858,7 +902,7 @@
           "customSize": true,
           "depth": 1,
           "height": 128,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "Yes",
           "persistentUuid": "db375c7d-0194-4cff-a714-1a0ff1d4a7ad",
           "width": 320,
@@ -881,7 +925,7 @@
           "customSize": true,
           "depth": 1,
           "height": 128,
-          "layer": "UI",
+          "layer": "UI_UX",
           "name": "No",
           "persistentUuid": "a58fc4d2-a930-4feb-94a9-be5d628faa0a",
           "width": 320,
@@ -970,8 +1014,8 @@
             },
             {
               "name": "Platform",
-              "platformType": "Jumpthru",
               "type": "PlatformBehavior::PlatformBehavior",
+              "platformType": "Jumpthru",
               "canBeGrabbed": false,
               "yGrabOffset": 0
             }
@@ -1254,6 +1298,24 @@
               "TouchIsInside": false,
               "MouseIsInside": false,
               "Index": 0
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1.5,
+              "FocusedScale": 1.2,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 1.2,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -1387,6 +1449,24 @@
               "TouchIsInside": false,
               "MouseIsInside": false,
               "Index": 0
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -1459,6 +1539,24 @@
               "TouchIsInside": false,
               "MouseIsInside": false,
               "Index": 0
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -1538,6 +1636,24 @@
               "TouchIsInside": false,
               "MouseIsInside": false,
               "Index": 0
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -1610,6 +1726,24 @@
               "TouchIsInside": false,
               "MouseIsInside": false,
               "Index": 0
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -1720,8 +1854,8 @@
             },
             {
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "platformType": "NormalPlatform",
               "canBeGrabbed": false,
               "yGrabOffset": 0
             }
@@ -1883,6 +2017,24 @@
               "TouchIsInside": false,
               "MouseIsInside": false,
               "Index": 0
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -2108,7 +2260,7 @@
               },
               "parameters": [
                 "",
-                "\"UI\""
+                "\"UI_UX\""
               ]
             }
           ]
@@ -2407,217 +2559,235 @@
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "Physics2::LinearVelocityLength"
+                        "value": "SceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "Snowball_Moveable",
-                        "Physics2",
-                        ">=",
-                        "15"
+                        "Pause_is_Active",
+                        "False"
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "ScalableCapability::ScalableBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Scale",
-                        "+",
-                        "0.0009"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "Physics2::Collision"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Physics2",
-                        "Snowball_Static",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Physics2::SetStatic"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Physics2"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Physics2::LinearVelocityLength"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Physics2",
+                            ">=",
+                            "15"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ScalableCapability::ScalableBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Scale",
+                            "+",
+                            "0.0009"
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "=",
-                        "Snowball_Static.X() + 60",
-                        "=",
-                        "Snowball_Static.Y() - 90"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Physics2::Collision"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Physics2",
+                            "Snowball_Static",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Physics2::SetStatic"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Physics2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MettreXY"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "=",
+                            "Snowball_Static.X() + 60",
+                            "=",
+                            "Snowball_Static.Y() - 90"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Game Scene\"",
+                            ""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "2"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Physics2::Collision"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Physics2",
+                            "Lose_Area",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ScalableCapability::ScalableBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Scale",
+                            "-",
+                            "0.5"
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Game Scene\"",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "Physics2::Collision"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Physics2",
-                        "Lose_Area",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ScalableCapability::ScalableBehavior::SetValue"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Scale",
-                        "-",
-                        "0.5"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "ScalableCapability::ScalableBehavior::Value"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Scale",
-                        "<=",
-                        "0.1"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Game Scene\"",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "CollisionPoint"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Player.PointX(\"Platform_Below\")",
-                        "Player.PointY(\"Platform_Below\")"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Physics2::SetDynamic"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Physics2"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ScalableCapability::ScalableBehavior::Value"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Scale",
+                            "<=",
+                            "0.1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Game Scene\"",
+                            ""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "PlatformBehavior::ChangePlatformType"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Platform",
-                        "\"Jumpthru\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionPoint"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Player.PointX(\"Platform_Below\")",
-                        "Player.PointY(\"Platform_Below\")"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Physics2::SetStatic"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Physics2"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "CollisionPoint"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Player.PointX(\"Platform_Below\")",
+                            "Player.PointY(\"Platform_Below\")"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Physics2::SetDynamic"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Physics2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::ChangePlatformType"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Platform",
+                            "\"Jumpthru\""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "PlatformBehavior::ChangePlatformType"
-                      },
-                      "parameters": [
-                        "Snowball_Moveable",
-                        "Platform",
-                        "\"Platform\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionPoint"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Player.PointX(\"Platform_Below\")",
+                            "Player.PointY(\"Platform_Below\")"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Physics2::SetStatic"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Physics2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::ChangePlatformType"
+                          },
+                          "parameters": [
+                            "Snowball_Moveable",
+                            "Platform",
+                            "\"Platform\""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -2630,7 +2800,8 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "name": "",
+              "folded": true,
+              "name": "Collectables",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -2806,7 +2977,7 @@
                     "",
                     "CameraUI_Box",
                     "",
-                    "\"UI\"",
+                    "\"UI_UX\"",
                     ""
                   ]
                 },
@@ -2867,7 +3038,7 @@
                     "",
                     "CameraUI_Box",
                     "",
-                    "\"UI\"",
+                    "\"UI_UX\"",
                     ""
                   ]
                 },
@@ -2916,7 +3087,7 @@
                     "",
                     "CameraUI_Box",
                     "",
-                    "\"UI\"",
+                    "\"UI_UX\"",
                     ""
                   ]
                 }
@@ -2956,7 +3127,7 @@
                     "",
                     "CameraUI_Box",
                     "",
-                    "\"UI\"",
+                    "\"UI_UX\"",
                     ""
                   ]
                 }
@@ -3072,7 +3243,7 @@
                     "",
                     "CameraUI_Box",
                     "",
-                    "\"UI\"",
+                    "\"UI_UX\"",
                     ""
                   ]
                 }
@@ -3123,10 +3294,21 @@
                 },
                 {
                   "type": {
-                    "value": "ChangeTimeScale"
+                    "value": "ChangeLayerTimeScale"
                   },
                   "parameters": [
                     "",
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Physics2::TimeScale"
+                  },
+                  "parameters": [
+                    "Physics_Objects",
+                    "Physics2",
                     "0"
                   ]
                 }
@@ -3165,10 +3347,21 @@
                 },
                 {
                   "type": {
-                    "value": "ChangeTimeScale"
+                    "value": "ChangeLayerTimeScale"
                   },
                   "parameters": [
                     "",
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Physics2::TimeScale"
+                  },
+                  "parameters": [
+                    "Physics_Objects",
+                    "Physics2",
                     "1"
                   ]
                 }
@@ -3246,7 +3439,7 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "UI",
+          "name": "UI_UX",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
@@ -3277,6 +3470,10 @@
         {
           "name": "ButtonFSM",
           "type": "ButtonStates::ButtonFSM"
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween"
         },
         {
           "name": "Effect",
@@ -3317,6 +3514,10 @@
         {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     },
@@ -3340,10 +3541,31 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.1220382330370671,
+        "zoomFactor": 0.24488383633725527,
         "windowMask": false
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Buttons__MainMenu",
+          "objects": [
+            {
+              "name": "GameStart"
+            },
+            {
+              "name": "Options"
+            },
+            {
+              "name": "About"
+            },
+            {
+              "name": "Ouit"
+            },
+            {
+              "name": "Back"
+            }
+          ]
+        }
+      ],
       "variables": [],
       "instances": [
         {
@@ -3406,22 +3628,6 @@
           "x": 192,
           "y": 768,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 64,
-          "layer": "UI_UX",
-          "name": "Version",
-          "persistentUuid": "1989f04a-7a12-4b17-b5ce-ca8c3dea4ebc",
-          "width": 288,
-          "x": 1600,
-          "y": 992,
-          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3595,6 +3801,24 @@
               "TouchIsInside": false,
               "MouseIsInside": false,
               "Index": 0
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -3667,6 +3891,24 @@
               "TouchIsInside": false,
               "MouseIsInside": false,
               "Index": 0
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -3739,6 +3981,24 @@
               "TouchIsInside": false,
               "MouseIsInside": false,
               "Index": 0
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -3811,6 +4071,24 @@
               "TouchIsInside": false,
               "MouseIsInside": false,
               "Index": 0
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -3866,27 +4144,6 @@
           ]
         },
         {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "Version",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "[Ver: 1.23.45]",
-          "font": "",
-          "textAlignment": "right",
-          "characterSize": 30,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Back",
@@ -3904,6 +4161,24 @@
               "TouchIsInside": false,
               "MouseIsInside": false,
               "Index": 0
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 0.95,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
             }
           ],
           "animations": [
@@ -4055,9 +4330,6 @@
                 "objectName": "About_Title"
               },
               {
-                "objectName": "Version"
-              },
-              {
                 "objectName": "Temp_Logo"
               }
             ]
@@ -4078,17 +4350,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "Version",
-                "Text",
-                "=",
-                "\"Ver: \"+ CurrentGameVersion::ReturnCurrentGameVersion()"
-              ]
-            },
             {
               "type": {
                 "value": "Cache"
@@ -4311,7 +4572,7 @@
           "isLocked": false,
           "name": "",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [
             {
               "defaultSize": true,
@@ -4385,6 +4646,10 @@
           "type": "ButtonStates::ButtonFSM"
         },
         {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -4407,6 +4672,10 @@
         {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     }
@@ -4426,6 +4695,93 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetIdleScale"
+                  },
+                  "parameters": [
+                    "Buttons__MainMenu",
+                    "ButtonScaleTween",
+                    "+",
+                    "3.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetFocusedScale"
+                  },
+                  "parameters": [
+                    "Buttons__MainMenu",
+                    "ButtonScaleTween",
+                    "+",
+                    "4",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetPressedScale"
+                  },
+                  "parameters": [
+                    "Buttons__MainMenu",
+                    "ButtonScaleTween",
+                    "+",
+                    "3.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetIdleScale"
+                  },
+                  "parameters": [
+                    "Buttons_GameScene",
+                    "ButtonScaleTween",
+                    "+",
+                    "3.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetFocusedScale"
+                  },
+                  "parameters": [
+                    "Buttons_GameScene",
+                    "ButtonScaleTween",
+                    "+",
+                    "4",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetPressedScale"
+                  },
+                  "parameters": [
+                    "Buttons_GameScene",
+                    "ButtonScaleTween",
+                    "+",
+                    "3.5",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -4573,10 +4929,76 @@
       "name": "Debug",
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Version Number\"",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.00000000000000000000001"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Version",
+                "Text",
+                "=",
+                "\"Ver: \"+ CurrentGameVersion::ReturnCurrentGameVersion()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "Version",
+                "\"UI_UX\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Version",
+                "=",
+                "999"
+              ]
+            }
+          ]
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "General Debug",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -15584,6 +16006,41 @@
       "eventsBasedObjects": []
     }
   ],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "associatedLayout": "Main Menu",
+      "name": "Version Number",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Version",
+          "persistentUuid": "6cb62d85-7595-41b2-acc6-6db5a7432f4d",
+          "width": 0,
+          "x": 1720,
+          "y": 1019,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.3768772036750873,
+        "windowMask": false
+      }
+    }
+  ],
   "externalSourceFiles": []
 }
