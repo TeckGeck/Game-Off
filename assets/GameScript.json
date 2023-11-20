@@ -2,10 +2,40 @@
 	{
 		"title": "Start",
 		"tags": "",
-		"body": "<<Deck>>\nAlright, we're finally here!\n<<Wenn>>\nWhoooaaa... Everything's so white.\n<<Tim>> \nWell that IS what this place is famous for. Rumour has it that the snow here has a mysterious power.\n<<Wenn>>\nReaalllyy???\n<<Merry>> \nHe's not wrong. From my research, it's got something to do with what it's made out of.\n<<Deck>>\nYeah sure. So, when do we get to have snowball fights, a-and make snow angels, oh oh! And build a snowman??\n<<Merry>> \nchuckles Hold on Deck. I need you guys to collect snow for an experiment I'm doing, but if you want, you can make a sno-\n<<Deck>> \nGet snow, give snow to Merry, got it! Come on guys, let's go!\n<<Wenn>> \nHuh? W-w-wait! Deck!!\n<<Tim>> \nOff we go!\n<<Merry>> \nGuys!... sigh This should be interesting.",
+		"body": "<<Deck>>\nAlright, we're finally here!\n<<Wenn>>\nUgh... wh-why's it gotta be so c-c-cold?\n<<Tim>> \nWell that IS what this place is famous for. Rumour has it that the snow here has a mysterious power.\n<<Wenn>>\nReaalllyy??? I don't buy it.\n<<Merry>> \nHe's not wrong. From my research, it's got something to do with what it's made out of.\n<<Deck>>\nYeah sure. So, when do we get to have snowball fights, a-and make snow angels, oh oh! And build a snowman??\n<<Merry>> \n[i]*chuckles*[/i] Hold on Deck. I need you guys to collect snow for an experiment Place these items in the snow so I can meassure it.\n<<Deck>> \nPut items in snow, give to Merry, got it! Come on guys, let's go!\n<<Wenn>> \nHuh? W-w-wait! Deck!!\n<<Deck>> \nWoops!\n<<Wenn>>\nYou big doof! You knocked everything all over the place!\n<<Tim>> \nWelp, Guess we'll have to go and get it.\n<<Wenn>> \n[i]You guys[/i] can go. I'm staying here.\n<<Merry>> \nGuys!... sigh This should be interesting.",
 		"position": {
-			"x": 496,
-			"y": 270
+			"x": 488,
+			"y": 216
+		},
+		"colorID": 0
+	},
+	{
+		"title": "level1",
+		"tags": "",
+		"body": "<<Deck>>\nAw man, where'd all the stuff go?\n<<Merry>>\nJust roll a snowball to the top of the hill and the frequency from the condensed pile of snow will help me show you where they are.\n<<Deck>>\nRoll snowball up hill, get the stuff, got it!\n<<Tim>>\nIt's pretty steep though, don't let it roll back down or it'll melt.\n<<Deck>>\nOkay! Snowman time!",
+		"position": {
+			"x": 722,
+			"y": 225
+		},
+		"colorID": 0
+	},
+	{
+		"title": "level2",
+		"tags": "",
+		"body": "<<Deck>> \nWhy's it melt so fast?\n<<Tim>> \nProbably has to do with whatever makes this type of snow so different from regular snow.\n<<Merry>>\nWe'll see, just as soon as you guys get all the pieces back.\n<<Wenn>>\nYou better not miss anything!\n<<Deck>>\nIt's your fault we're out here.\n<<Merry>>\nHey, cool it.\n<<Tim>>\nchuckles That won't be a problem.",
+		"position": {
+			"x": 977,
+			"y": 226
+		},
+		"colorID": 0
+	},
+	{
+		"title": "level3",
+		"tags": "",
+		"body": "<<Deck>>\nHey Tim, why not just open the gate now, I can roll the ball over, and we can at least have a snowman to play with.\n<<Deck>>\nMerry doesn't have to kn-\n<<Merry>>\nDon't even think about it.",
+		"position": {
+			"x": 1210,
+			"y": 233
 		},
 		"colorID": 0
 	}
