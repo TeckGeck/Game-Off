@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.0.010",
+    "version": "0.0.011",
     "name": "Game off",
     "description": "",
     "author": "",
@@ -426,11 +426,1235 @@
         "g": 0,
         "r": 0
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Floating_Platform",
+      "texture": "New image4",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Static",
+          "bullet": false,
+          "fixedRotation": true,
+          "canSleep": false,
+          "shape": "Box",
+          "shapeDimensionA": 0,
+          "shapeDimensionB": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "polygonOrigin": "Center",
+          "vertices": [],
+          "density": 1,
+          "friction": 0.3,
+          "restitution": 0.1,
+          "linearDamping": 0.1,
+          "angularDamping": 0.1,
+          "gravityScale": 1,
+          "layers": 1,
+          "masks": 1
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "Jumpthru",
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Ground",
+      "texture": "New image",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Static",
+          "bullet": false,
+          "fixedRotation": true,
+          "canSleep": false,
+          "shape": "Box",
+          "shapeDimensionA": 0,
+          "shapeDimensionB": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "polygonOrigin": "Center",
+          "vertices": [],
+          "density": 1,
+          "friction": 0.3,
+          "restitution": 0.1,
+          "linearDamping": 0.1,
+          "angularDamping": 0.1,
+          "gravityScale": 1,
+          "layers": 16,
+          "masks": 16
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "Jumpthru",
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Lose_Area",
+      "texture": "New image3",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Static",
+          "bullet": false,
+          "fixedRotation": false,
+          "canSleep": true,
+          "shape": "Box",
+          "shapeDimensionA": 0,
+          "shapeDimensionB": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "polygonOrigin": "Center",
+          "vertices": [],
+          "density": 0.2,
+          "friction": 5,
+          "restitution": 0.1,
+          "linearDamping": 0.1,
+          "angularDamping": 0.1,
+          "gravityScale": 1,
+          "layers": 17,
+          "masks": 17
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Moveable_Door",
+      "texture": "Tempdoor",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Static",
+          "bullet": false,
+          "fixedRotation": true,
+          "canSleep": false,
+          "shape": "Box",
+          "shapeDimensionA": 0,
+          "shapeDimensionB": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "polygonOrigin": "Center",
+          "vertices": [],
+          "density": 5,
+          "friction": 0,
+          "restitution": 0.1,
+          "linearDamping": 0.1,
+          "angularDamping": 0.1,
+          "gravityScale": 1,
+          "layers": 17,
+          "masks": 17
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "platformType": "NormalPlatform",
+          "canBeGrabbed": false,
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Snowball_Moveable",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Dynamic",
+          "bullet": false,
+          "fixedRotation": false,
+          "canSleep": false,
+          "shape": "Circle",
+          "shapeDimensionA": 0,
+          "shapeDimensionB": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "polygonOrigin": "Center",
+          "vertices": [],
+          "density": 0.5,
+          "friction": 20,
+          "restitution": 0.1,
+          "linearDamping": 0.1,
+          "angularDamping": 0,
+          "gravityScale": 1,
+          "layers": 16,
+          "masks": 16
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "platformType": "Jumpthru",
+          "canBeGrabbed": false,
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Snowball_Static",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Static",
+          "bullet": false,
+          "fixedRotation": false,
+          "canSleep": true,
+          "shape": "Circle",
+          "shapeDimensionA": 0,
+          "shapeDimensionB": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "polygonOrigin": "Center",
+          "vertices": [],
+          "density": 0.2,
+          "friction": 5,
+          "restitution": 0.1,
+          "linearDamping": 0.1,
+          "angularDamping": 0.1,
+          "gravityScale": 1,
+          "layers": 17,
+          "masks": 17
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "Jumpthru",
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 62
+                      },
+                      {
+                        "x": 0,
+                        "y": 62
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Player",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Dynamic",
+          "bullet": false,
+          "fixedRotation": true,
+          "canSleep": false,
+          "shape": "Box",
+          "shapeDimensionA": 0,
+          "shapeDimensionB": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "polygonOrigin": "Center",
+          "vertices": [],
+          "density": 5,
+          "friction": 5,
+          "restitution": 0.1,
+          "linearDamping": 0.1,
+          "angularDamping": 0.1,
+          "gravityScale": 1,
+          "layers": 17,
+          "masks": 17
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "ignoreDefaultControls": true,
+          "canGrabWithoutMoving": false,
+          "acceleration": 1500,
+          "canGoDownFromJumpthru": true,
+          "canGrabPlatforms": false,
+          "deceleration": 1500,
+          "gravity": 1000,
+          "jumpSpeed": 1000,
+          "jumpSustainTime": 0.2,
+          "ladderClimbingSpeed": 150,
+          "maxFallingSpeed": 700,
+          "maxSpeed": 300,
+          "slopeMaxAngle": 60,
+          "useLegacyTrajectory": false,
+          "xGrabTolerance": 10,
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite3",
+                  "points": [
+                    {
+                      "name": "Platform_Above",
+                      "x": 32.5,
+                      "y": -4
+                    },
+                    {
+                      "name": "Platform_Below",
+                      "x": 31,
+                      "y": 65.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Collectable",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Tempcollect",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Tempcollect",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 61,
+                        "y": 0
+                      },
+                      {
+                        "x": 61,
+                        "y": 53
+                      },
+                      {
+                        "x": 0,
+                        "y": 53
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Pause_BG",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Pause_BG",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Pause_BG",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "AreYouSureQuit_Text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Are you sure you want to quit? \nYour progress will be lost.",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 60,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "AreYouSureRestart_Text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Are you sure you want to restart? \nYour progress will be lost.",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 60,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Pause",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1.5,
+          "FocusedScale": 1.2,
+          "FadeInDuration": 0.1,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 1.2,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":64,\\\"width\\\":64,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAIJJREFUeF7t1wERADAIAzGQNP/imJDPJPRGc9177yb8VgB+gBPQAeEOHCVIAQpQgAIUCCeAQQxiEIMYDCNgDGEQgxjEIAYxGE4AgxjEIAYxGEbAGsQgBjGIQQxiMJwABjGIQQxiMIyANYhBDGIQgxjEYDgBDGIQgxjEYBgBaxCDdQY/W2mYQWPOQyYAAAAASUVORK5CYII=\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAa9JREFUeF7tmtsOwjAMQ+H/PxqEBBKCjsZ2li3UPDe3Eycrg+tl8c918fovBmAFLE7AI9BQALeNnKlmUkYHQtsq/pUSXA9sMCh+lFSG3xHnNgAeye8BoRUAWpYbIzYrnoKe0aVZYhkxHsXN4pwWAJVYcNeMxAIBhw5XStMAvglERgBWmxWQcKmJdKYKtBWA3j+qOlMVp1wBEfnDSQlPGziW2hkDAJboKWFXJQVLs8tFKDoCfwkAKd4A0OdzhxGwAoAngEfAI6C/I4yOHPRohw5/SD6aUNa7wWg8qCbosABAifMKuzSAaPHwslU6s1tSwh1geQBwQ2GDt+6cUQFwPbABuQiVOLuCVhKL/loDzyUJmYpTAaAiBlU8bQTuAQMAvzR9Ho/uAAo0ZQQoQPW/+55RE5x1R/VvAMH/BdD7TO2QFTBZcCrg6AjQcWjDZ+EVCohAoOugDQMAVN/v4voFWoojGU8WlOo7ch+QY8gOfkDI8C3eoebmGUlW/lN0XhF4wgBAYKPjyysggeFxLjJG4LjsEyIbQALE1i6sgNbtS0jeCkiA2NqFFdC6fQnJL6+AO2ZGWEGwZiGqAAAAAElFTkSuQmCC\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"NewSprite4\"],\"name\":\"NewSprite3\"}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Resume",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1,
+          "FocusedScale": 1,
+          "FadeInDuration": 0.1,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 0.95,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Tempresume",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAATtJREFUaEPtmNsOwzAIQ9f//+hNkVYJMRObpJVWQR97SeDEMaTHqy9I4GgumECDCZTRYBpMzjSQYt5giHLKisD4+wNWKTgZMENIZeCoYAaUUqpRwZy+U1YxXhXWiMtAQZ7RFelbkstXn6i7QWBKVZ8Gk2t8f/oSpfqUMOTIY2Y9i302q2J+S2b6oF34ygJPNZQFg0DYMVaB2iB9Ur5SsrZhtnDyhppVJZQkm/QqMNm4PFh1sUJQ2QDY6v0LGJswU5j0a9MrAvkEK+cRHKa2M0CmVH9uu6UpZQ0eMjHF2FhyqrIiqe9+T72GgYlO1WxLoe8s0EyFokmAF7bHV8CsBqacxZb2vxCQouqlci3MHb6iBrXbq7AY1TjS5ssmfsrzJUB3Sfkp0OQ+5vEJXZVAKyYg2WAaTG6TtWICXh+5vF4hsO6SkQAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[]}}\",\"resourceNames\":[\"Tempresume\"],\"name\":\"Tempresume\"}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Tempresume",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 70,
+                        "y": 0
+                      },
+                      {
+                        "x": 70,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Restart",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1,
+          "FocusedScale": 1,
+          "FadeInDuration": 0.1,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 0.95,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Temprestart",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAWJJREFUaEPtl0sOwyAMRMn9D92IBZVlefwliaK4uzZgJs/DQI/RH5HA0VxkAg0GOKPBNJhYaLRjnI75CeM+CY++9ILCf2swYwwJwgT2OTged7wRjOT+UPpaYN4IZQIo60ZgysSV9pRFO1pfXkMK37nulZlSFm2A2VLfOpUczQkP2SL8akdKW8kjnN93kPMk93nqh2mTCVvqV8CsuVQIzyZJpFe4lXOoOVsuqTxLlmhNPH9mfefdl4SvMVOP5kZaC2mU9IRzE4FBRx56Ka2OBEYLd+5ANNYLJrUtrReqLJ6dS12rdTpb3wWqAsZjT5QxdOtoW21trchfFW+GqYAsMGtLIQgeEVpnNUDrmRayEWAupyBBUXtS0VZueBwWEg+u/vQ0s042uJ7HMbRz2RtxWmCUFLvPpJsRAZPV+ASUrNb/vDvAlEU+UaDBAOrZzHiiibeu2WDaMTHDtWPaMe2YGAEw+gSuCWEh0jQZCwAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Temprestart\"],\"name\":\"Temprestart\"}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Temprestart",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 70,
+                        "y": 0
+                      },
+                      {
+                        "x": 70,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Main_Menu",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1,
+          "FocusedScale": 1,
+          "FadeInDuration": 0.1,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 0.95,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Tempmainmenu",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAU1JREFUaEPtmO0OwyAIRdf3f+gtLiUhhE+L0q3sz9ZMUY4XhB6v/rAEjubCE2gwgjIaTIOJJY1WTCumFRMj4FTM+xz3+BCjAADM4DP+eywoDGZAgGf43WBOdVigUuL3F4xIIMbeOQVJPlnKwraobXgG27fIbzR0sOOWMzCW5iUOnmSLA0rHlggsAkY6aUjS+Js6w4GBBG+NfRwYLWTKVaMpRssneB49ec4pb1ji8CzNNavAYFhRKCWhQxedAePZeORG89jbPmYVmO2OZC/YYIwmsvwWyD7xq/Z2KMZTAEpFYVk1vPpKpJWtV5naTWa1H1fF8p2/Awztx6SbUWpHom1DCrgKMNw7IA0et0ctPL2qVJW1G4yVS7TCkFNURpXNAroDGK45xa0Bl4C1AjKl0l4NJiURGkY01UyH1T+AscJzysepSTtkUL1GgxFO4APbu2MhrpdQXgAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempmainmenu\"],\"name\":\"Tempmainmenu\"}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Tempmainmenu",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 70,
+                        "y": 0
+                      },
+                      {
+                        "x": 70,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Yes",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Confirm",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1,
+          "FocusedScale": 1,
+          "FadeInDuration": 0.1,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 0.95,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Tempyes",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAXFJREFUaEPtmNsOwyAMQ9n/f/QmpDEhlBDbpKqqpY9bAsmxubSvVo9J4FVcbAIFxnFGgUkA826t/Q1IptEC47irg+nPU2Aq9f5aZ5rsSaxr2PjMQ3KAYcWk1R9Fo80eKZZA6BYwkQp3QxnuHnzZlUHtF7OIsxqWuL0Q1FkJ5jCHWGuk4FDBZAcFxgBmQbFchgqj5squQQtjzOI5Zf092od2myfjxhHL5Mh7zA6U5xZLhB3EaINHxZrBwGNmOwZ1S3T0U+oChOijOxPMrhnvFPPmvwIMdVJmgYkaif63RFdyIvPAY2aAQSZDYtamlJwIDPz/CZjoVFkvhMpczBxw00ggW6x6LzhV/yRfgsuCQWB7MSfNqW/2cy1Ur1TwCZWkdycGrupu+bPDCR/rPsE0O781R6LOS4id45KbLwpOWvvfwZFc6cYrf6dAu74oDgGScRre6hiUHX2dRwfexUXrNGOOR45RYBzZCkyB4VZ0Ocbh9QGhBE4hZHVAcAAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempyes\"],\"name\":\"Tempyes\"}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Tempyes",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 70,
+                        "y": 0
+                      },
+                      {
+                        "x": 70,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "No",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 0
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1,
+          "FocusedScale": 1,
+          "FadeInDuration": 0.1,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 0.95,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Tempno",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAARVJREFUaEPtllEOwyAMQ9v7H3pTp1ExRnDjMECd+SaJeXEi9k2nSmAXlzoBgTGcITAC41sacowcM94xjwWhH5pC0xAKfgOxRCRgPWr42r1t08EgAbPgIF0QdLSbVwR44NTGktF4RVcTDlM0JfQUR3cteB6o+UPZuDMHCwY9tOwGEtrKh2JrnWdiPvKMAnMUbS1ppMP7UO/9L7hIkDWHXsdEwbTil3EMA0VgGqs+MkpyDAHWGiV2TbzyMcG/GCWkJbxM4Y+uuLACmDQmLThsM7w8Qv8YViSKK11R/oKZJg4Dgx5HC8kCcyBDYeTipxXuQdDI0aV5dwPTzW0CY9hOYP4ETLfVdTfHCEw3AholH0qNkhzjc8wTDFVBIYFY8GMAAAAASUVORK5CYII=\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempno\"],\"name\":\"Tempno\"}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Tempno",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 70,
+                        "y": 0
+                      },
+                      {
+                        "x": 70,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "folderName": "Buttons",
+        "children": [
+          {
+            "objectName": "No"
+          },
+          {
+            "objectName": "Yes"
+          },
+          {
+            "objectName": "Main_Menu"
+          },
+          {
+            "objectName": "Restart"
+          },
+          {
+            "objectName": "Resume"
+          },
+          {
+            "objectName": "Pause"
+          }
+        ]
+      },
+      {
+        "folderName": "GamePlay Objects",
+        "children": [
+          {
+            "objectName": "Player"
+          },
+          {
+            "objectName": "Collectable"
+          },
+          {
+            "objectName": "Snowball_Static"
+          },
+          {
+            "objectName": "Snowball_Moveable"
+          },
+          {
+            "objectName": "Moveable_Door"
+          },
+          {
+            "objectName": "Lose_Area"
+          },
+          {
+            "objectName": "Ground"
+          },
+          {
+            "objectName": "Floating_Platform"
+          }
+        ]
+      },
       {
         "objectName": "CameraUI_Box"
       },
@@ -439,6 +1663,15 @@
       },
       {
         "objectName": "GameStateLable"
+      },
+      {
+        "objectName": "Pause_BG"
+      },
+      {
+        "objectName": "AreYouSureQuit_Text"
+      },
+      {
+        "objectName": "AreYouSureRestart_Text"
       }
     ]
   },
@@ -1716,7 +2949,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.19415059112740968,
+        "zoomFactor": 0.25314140012986497,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2260,1240 +3493,9 @@
           "initialVariables": []
         }
       ],
-      "objects": [
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Ground",
-          "texture": "New image",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 1,
-              "friction": 0.3,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 16,
-              "masks": 16
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Snowball_Moveable",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Dynamic",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": false,
-              "shape": "Circle",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 0.5,
-              "friction": 20,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0,
-              "gravityScale": 1,
-              "layers": 16,
-              "masks": 16
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "platformType": "Jumpthru",
-              "canBeGrabbed": false,
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 62
-                          },
-                          {
-                            "x": 0,
-                            "y": 62
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Snowball_Static",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": true,
-              "shape": "Circle",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 0.2,
-              "friction": 5,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 62
-                          },
-                          {
-                            "x": 0,
-                            "y": 62
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Player",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Dynamic",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 5,
-              "friction": 5,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            },
-            {
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "ignoreDefaultControls": true,
-              "canGrabWithoutMoving": false,
-              "acceleration": 1500,
-              "canGoDownFromJumpthru": true,
-              "canGrabPlatforms": false,
-              "deceleration": 1500,
-              "gravity": 1000,
-              "jumpSpeed": 1000,
-              "jumpSustainTime": 0.2,
-              "ladderClimbingSpeed": 150,
-              "maxFallingSpeed": 700,
-              "maxSpeed": 300,
-              "slopeMaxAngle": 60,
-              "useLegacyTrajectory": false,
-              "xGrabTolerance": 10,
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite3",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite3",
-                      "points": [
-                        {
-                          "name": "Platform_Above",
-                          "x": 32.5,
-                          "y": -4
-                        },
-                        {
-                          "name": "Platform_Below",
-                          "x": 31,
-                          "y": 65.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Pause",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1.5,
-              "FocusedScale": 1.2,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 1.2,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite3",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":64,\\\"width\\\":64,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAIJJREFUeF7t1wERADAIAzGQNP/imJDPJPRGc9177yb8VgB+gBPQAeEOHCVIAQpQgAIUCCeAQQxiEIMYDCNgDGEQgxjEIAYxGE4AgxjEIAYxGEbAGsQgBjGIQQxiMJwABjGIQQxiMIyANYhBDGIQgxjEYDgBDGIQgxjEYBgBaxCDdQY/W2mYQWPOQyYAAAAASUVORK5CYII=\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAa9JREFUeF7tmtsOwjAMQ+H/PxqEBBKCjsZ2li3UPDe3Eycrg+tl8c918fovBmAFLE7AI9BQALeNnKlmUkYHQtsq/pUSXA9sMCh+lFSG3xHnNgAeye8BoRUAWpYbIzYrnoKe0aVZYhkxHsXN4pwWAJVYcNeMxAIBhw5XStMAvglERgBWmxWQcKmJdKYKtBWA3j+qOlMVp1wBEfnDSQlPGziW2hkDAJboKWFXJQVLs8tFKDoCfwkAKd4A0OdzhxGwAoAngEfAI6C/I4yOHPRohw5/SD6aUNa7wWg8qCbosABAifMKuzSAaPHwslU6s1tSwh1geQBwQ2GDt+6cUQFwPbABuQiVOLuCVhKL/loDzyUJmYpTAaAiBlU8bQTuAQMAvzR9Ho/uAAo0ZQQoQPW/+55RE5x1R/VvAMH/BdD7TO2QFTBZcCrg6AjQcWjDZ+EVCohAoOugDQMAVN/v4voFWoojGU8WlOo7ch+QY8gOfkDI8C3eoebmGUlW/lN0XhF4wgBAYKPjyysggeFxLjJG4LjsEyIbQALE1i6sgNbtS0jeCkiA2NqFFdC6fQnJL6+AO2ZGWEGwZiGqAAAAAElFTkSuQmCC\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"NewSprite4\"],\"name\":\"NewSprite3\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite4",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Pause_BG",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Pause_BG",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Pause_BG",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Resume",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempresume",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAATtJREFUaEPtmNsOwzAIQ9f//+hNkVYJMRObpJVWQR97SeDEMaTHqy9I4GgumECDCZTRYBpMzjSQYt5giHLKisD4+wNWKTgZMENIZeCoYAaUUqpRwZy+U1YxXhXWiMtAQZ7RFelbkstXn6i7QWBKVZ8Gk2t8f/oSpfqUMOTIY2Y9i302q2J+S2b6oF34ygJPNZQFg0DYMVaB2iB9Ur5SsrZhtnDyhppVJZQkm/QqMNm4PFh1sUJQ2QDY6v0LGJswU5j0a9MrAvkEK+cRHKa2M0CmVH9uu6UpZQ0eMjHF2FhyqrIiqe9+T72GgYlO1WxLoe8s0EyFokmAF7bHV8CsBqacxZb2vxCQouqlci3MHb6iBrXbq7AY1TjS5ssmfsrzJUB3Sfkp0OQ+5vEJXZVAKyYg2WAaTG6TtWICXh+5vF4hsO6SkQAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[]}}\",\"resourceNames\":[\"Tempresume\"],\"name\":\"Tempresume\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempresume",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Main_Menu",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempmainmenu",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAU1JREFUaEPtmO0OwyAIRdf3f+gtLiUhhE+L0q3sz9ZMUY4XhB6v/rAEjubCE2gwgjIaTIOJJY1WTCumFRMj4FTM+xz3+BCjAADM4DP+eywoDGZAgGf43WBOdVigUuL3F4xIIMbeOQVJPlnKwraobXgG27fIbzR0sOOWMzCW5iUOnmSLA0rHlggsAkY6aUjS+Js6w4GBBG+NfRwYLWTKVaMpRssneB49ec4pb1ji8CzNNavAYFhRKCWhQxedAePZeORG89jbPmYVmO2OZC/YYIwmsvwWyD7xq/Z2KMZTAEpFYVk1vPpKpJWtV5naTWa1H1fF8p2/Awztx6SbUWpHom1DCrgKMNw7IA0et0ctPL2qVJW1G4yVS7TCkFNURpXNAroDGK45xa0Bl4C1AjKl0l4NJiURGkY01UyH1T+AscJzysepSTtkUL1GgxFO4APbu2MhrpdQXgAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempmainmenu\"],\"name\":\"Tempmainmenu\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempmainmenu",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Yes",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "folded": true,
-              "name": "Confirm",
-              "type": "number",
-              "value": 0
-            }
-          ],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempyes",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAXFJREFUaEPtmNsOwyAMQ9n/f/QmpDEhlBDbpKqqpY9bAsmxubSvVo9J4FVcbAIFxnFGgUkA826t/Q1IptEC47irg+nPU2Aq9f5aZ5rsSaxr2PjMQ3KAYcWk1R9Fo80eKZZA6BYwkQp3QxnuHnzZlUHtF7OIsxqWuL0Q1FkJ5jCHWGuk4FDBZAcFxgBmQbFchgqj5squQQtjzOI5Zf092od2myfjxhHL5Mh7zA6U5xZLhB3EaINHxZrBwGNmOwZ1S3T0U+oChOijOxPMrhnvFPPmvwIMdVJmgYkaif63RFdyIvPAY2aAQSZDYtamlJwIDPz/CZjoVFkvhMpczBxw00ggW6x6LzhV/yRfgsuCQWB7MSfNqW/2cy1Ur1TwCZWkdycGrupu+bPDCR/rPsE0O781R6LOS4id45KbLwpOWvvfwZFc6cYrf6dAu74oDgGScRre6hiUHX2dRwfexUXrNGOOR45RYBzZCkyB4VZ0Ocbh9QGhBE4hZHVAcAAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempyes\"],\"name\":\"Tempyes\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempyes",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "No",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempno",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAARVJREFUaEPtllEOwyAMQ9v7H3pTp1ExRnDjMECd+SaJeXEi9k2nSmAXlzoBgTGcITAC41sacowcM94xjwWhH5pC0xAKfgOxRCRgPWr42r1t08EgAbPgIF0QdLSbVwR44NTGktF4RVcTDlM0JfQUR3cteB6o+UPZuDMHCwY9tOwGEtrKh2JrnWdiPvKMAnMUbS1ppMP7UO/9L7hIkDWHXsdEwbTil3EMA0VgGqs+MkpyDAHWGiV2TbzyMcG/GCWkJbxM4Y+uuLACmDQmLThsM7w8Qv8YViSKK11R/oKZJg4Dgx5HC8kCcyBDYeTipxXuQdDI0aV5dwPTzW0CY9hOYP4ETLfVdTfHCEw3AholH0qNkhzjc8wTDFVBIYFY8GMAAAAASUVORK5CYII=\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempno\"],\"name\":\"Tempno\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempno",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "AreYouSureQuit_Text",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Are you sure you want to quit? \nYour progress will be lost.",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 60,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Moveable_Door",
-          "texture": "Tempdoor",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 5,
-              "friction": 0,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "platformType": "NormalPlatform",
-              "canBeGrabbed": false,
-              "yGrabOffset": 0
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Lose_Area",
-          "texture": "New image3",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": true,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 0.2,
-              "friction": 5,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Floating_Platform",
-          "texture": "New image4",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 1,
-              "friction": 0.3,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 1,
-              "masks": 1
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Collectable",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Tempcollect",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempcollect",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 61,
-                            "y": 0
-                          },
-                          {
-                            "x": 61,
-                            "y": 53
-                          },
-                          {
-                            "x": 0,
-                            "y": 53
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Restart",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Temprestart",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAWJJREFUaEPtl0sOwyAMRMn9D92IBZVlefwliaK4uzZgJs/DQI/RH5HA0VxkAg0GOKPBNJhYaLRjnI75CeM+CY++9ILCf2swYwwJwgT2OTged7wRjOT+UPpaYN4IZQIo60ZgysSV9pRFO1pfXkMK37nulZlSFm2A2VLfOpUczQkP2SL8akdKW8kjnN93kPMk93nqh2mTCVvqV8CsuVQIzyZJpFe4lXOoOVsuqTxLlmhNPH9mfefdl4SvMVOP5kZaC2mU9IRzE4FBRx56Ka2OBEYLd+5ANNYLJrUtrReqLJ6dS12rdTpb3wWqAsZjT5QxdOtoW21trchfFW+GqYAsMGtLIQgeEVpnNUDrmRayEWAupyBBUXtS0VZueBwWEg+u/vQ0s042uJ7HMbRz2RtxWmCUFLvPpJsRAZPV+ASUrNb/vDvAlEU+UaDBAOrZzHiiibeu2WDaMTHDtWPaMe2YGAEw+gSuCWEh0jQZCwAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Temprestart\"],\"name\":\"Temprestart\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Temprestart",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "AreYouSureRestart_Text",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Are you sure you want to restart? \nYour progress will be lost.",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 60,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        }
-      ],
+      "objects": [],
       "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "folderName": "Buttons",
-            "children": [
-              {
-                "objectName": "Pause"
-              },
-              {
-                "objectName": "Resume"
-              },
-              {
-                "objectName": "Restart"
-              },
-              {
-                "objectName": "Main_Menu"
-              },
-              {
-                "objectName": "Yes"
-              },
-              {
-                "objectName": "No"
-              }
-            ]
-          },
-          {
-            "objectName": "Ground"
-          },
-          {
-            "objectName": "Floating_Platform"
-          },
-          {
-            "objectName": "Lose_Area"
-          },
-          {
-            "objectName": "Moveable_Door"
-          },
-          {
-            "objectName": "Snowball_Moveable"
-          },
-          {
-            "objectName": "Snowball_Static"
-          },
-          {
-            "objectName": "Player"
-          },
-          {
-            "objectName": "Pause_BG"
-          },
-          {
-            "objectName": "AreYouSureQuit_Text"
-          },
-          {
-            "objectName": "AreYouSureRestart_Text"
-          },
-          {
-            "objectName": "Collectable"
-          }
-        ]
+        "folderName": "__ROOT"
       },
       "events": [
         {
@@ -3674,7 +3676,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2531414001298649,
+        "zoomFactor": 0.31928945896901983,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4052,8 +4054,8 @@
           "name": "Floating_Platform",
           "persistentUuid": "22483a9e-98d2-4fe2-a6d3-2b3df19b2c66",
           "width": 192,
-          "x": 192,
-          "y": 448,
+          "x": 320,
+          "y": 128,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -4068,8 +4070,8 @@
           "name": "Floating_Platform",
           "persistentUuid": "71c0671e-534d-424a-9ac4-0ff3f4ba90ec",
           "width": 192,
-          "x": 1216,
-          "y": 576,
+          "x": 1344,
+          "y": 320,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -4084,8 +4086,8 @@
           "name": "Collectable",
           "persistentUuid": "181ca2c7-ba22-4155-88da-3510169fda32",
           "width": 128,
-          "x": 1216,
-          "y": 448,
+          "x": 1344,
+          "y": 192,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -4116,8 +4118,8 @@
           "name": "Collectable",
           "persistentUuid": "7b16191a-64c1-45af-ab6e-88f1eb5cd699",
           "width": 128,
-          "x": 256,
-          "y": 320,
+          "x": 384,
+          "y": 0,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -4216,1242 +4218,59 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Ground",
-          "texture": "New image",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 1,
-              "friction": 0.3,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 16,
-              "masks": 16
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Snowball_Moveable",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Dynamic",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": false,
-              "shape": "Circle",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 0.5,
-              "friction": 20,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0,
-              "gravityScale": 1,
-              "layers": 16,
-              "masks": 16
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "platformType": "Jumpthru",
-              "canBeGrabbed": false,
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 62
-                          },
-                          {
-                            "x": 0,
-                            "y": 62
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Snowball_Static",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": true,
-              "shape": "Circle",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 0.2,
-              "friction": 5,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 62
-                          },
-                          {
-                            "x": 0,
-                            "y": 62
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Player",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Dynamic",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 5,
-              "friction": 5,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            },
-            {
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "ignoreDefaultControls": true,
-              "canGrabWithoutMoving": false,
-              "acceleration": 1500,
-              "canGoDownFromJumpthru": true,
-              "canGrabPlatforms": false,
-              "deceleration": 1500,
-              "gravity": 1000,
-              "jumpSpeed": 1000,
-              "jumpSustainTime": 0.2,
-              "ladderClimbingSpeed": 150,
-              "maxFallingSpeed": 700,
-              "maxSpeed": 300,
-              "slopeMaxAngle": 60,
-              "useLegacyTrajectory": false,
-              "xGrabTolerance": 10,
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite3",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite3",
-                      "points": [
-                        {
-                          "name": "Platform_Above",
-                          "x": 32.5,
-                          "y": -4
-                        },
-                        {
-                          "name": "Platform_Below",
-                          "x": 31,
-                          "y": 65.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Pause",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1.5,
-              "FocusedScale": 1.2,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 1.2,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite3",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":64,\\\"width\\\":64,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAIJJREFUeF7t1wERADAIAzGQNP/imJDPJPRGc9177yb8VgB+gBPQAeEOHCVIAQpQgAIUCCeAQQxiEIMYDCNgDGEQgxjEIAYxGE4AgxjEIAYxGEbAGsQgBjGIQQxiMJwABjGIQQxiMIyANYhBDGIQgxjEYDgBDGIQgxjEYBgBaxCDdQY/W2mYQWPOQyYAAAAASUVORK5CYII=\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAa9JREFUeF7tmtsOwjAMQ+H/PxqEBBKCjsZ2li3UPDe3Eycrg+tl8c918fovBmAFLE7AI9BQALeNnKlmUkYHQtsq/pUSXA9sMCh+lFSG3xHnNgAeye8BoRUAWpYbIzYrnoKe0aVZYhkxHsXN4pwWAJVYcNeMxAIBhw5XStMAvglERgBWmxWQcKmJdKYKtBWA3j+qOlMVp1wBEfnDSQlPGziW2hkDAJboKWFXJQVLs8tFKDoCfwkAKd4A0OdzhxGwAoAngEfAI6C/I4yOHPRohw5/SD6aUNa7wWg8qCbosABAifMKuzSAaPHwslU6s1tSwh1geQBwQ2GDt+6cUQFwPbABuQiVOLuCVhKL/loDzyUJmYpTAaAiBlU8bQTuAQMAvzR9Ho/uAAo0ZQQoQPW/+55RE5x1R/VvAMH/BdD7TO2QFTBZcCrg6AjQcWjDZ+EVCohAoOugDQMAVN/v4voFWoojGU8WlOo7ch+QY8gOfkDI8C3eoebmGUlW/lN0XhF4wgBAYKPjyysggeFxLjJG4LjsEyIbQALE1i6sgNbtS0jeCkiA2NqFFdC6fQnJL6+AO2ZGWEGwZiGqAAAAAElFTkSuQmCC\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"NewSprite4\"],\"name\":\"NewSprite3\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite4",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Pause_BG",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Pause_BG",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Pause_BG",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Resume",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempresume",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAATtJREFUaEPtmNsOwzAIQ9f//+hNkVYJMRObpJVWQR97SeDEMaTHqy9I4GgumECDCZTRYBpMzjSQYt5giHLKisD4+wNWKTgZMENIZeCoYAaUUqpRwZy+U1YxXhXWiMtAQZ7RFelbkstXn6i7QWBKVZ8Gk2t8f/oSpfqUMOTIY2Y9i302q2J+S2b6oF34ygJPNZQFg0DYMVaB2iB9Ur5SsrZhtnDyhppVJZQkm/QqMNm4PFh1sUJQ2QDY6v0LGJswU5j0a9MrAvkEK+cRHKa2M0CmVH9uu6UpZQ0eMjHF2FhyqrIiqe9+T72GgYlO1WxLoe8s0EyFokmAF7bHV8CsBqacxZb2vxCQouqlci3MHb6iBrXbq7AY1TjS5ssmfsrzJUB3Sfkp0OQ+5vEJXZVAKyYg2WAaTG6TtWICXh+5vF4hsO6SkQAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[]}}\",\"resourceNames\":[\"Tempresume\"],\"name\":\"Tempresume\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempresume",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Main_Menu",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempmainmenu",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAU1JREFUaEPtmO0OwyAIRdf3f+gtLiUhhE+L0q3sz9ZMUY4XhB6v/rAEjubCE2gwgjIaTIOJJY1WTCumFRMj4FTM+xz3+BCjAADM4DP+eywoDGZAgGf43WBOdVigUuL3F4xIIMbeOQVJPlnKwraobXgG27fIbzR0sOOWMzCW5iUOnmSLA0rHlggsAkY6aUjS+Js6w4GBBG+NfRwYLWTKVaMpRssneB49ec4pb1ji8CzNNavAYFhRKCWhQxedAePZeORG89jbPmYVmO2OZC/YYIwmsvwWyD7xq/Z2KMZTAEpFYVk1vPpKpJWtV5naTWa1H1fF8p2/Awztx6SbUWpHom1DCrgKMNw7IA0et0ctPL2qVJW1G4yVS7TCkFNURpXNAroDGK45xa0Bl4C1AjKl0l4NJiURGkY01UyH1T+AscJzysepSTtkUL1GgxFO4APbu2MhrpdQXgAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempmainmenu\"],\"name\":\"Tempmainmenu\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempmainmenu",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Yes",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "folded": true,
-              "name": "Confirm",
-              "type": "number",
-              "value": 0
-            }
-          ],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempyes",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAXFJREFUaEPtmNsOwyAMQ9n/f/QmpDEhlBDbpKqqpY9bAsmxubSvVo9J4FVcbAIFxnFGgUkA826t/Q1IptEC47irg+nPU2Aq9f5aZ5rsSaxr2PjMQ3KAYcWk1R9Fo80eKZZA6BYwkQp3QxnuHnzZlUHtF7OIsxqWuL0Q1FkJ5jCHWGuk4FDBZAcFxgBmQbFchgqj5squQQtjzOI5Zf092od2myfjxhHL5Mh7zA6U5xZLhB3EaINHxZrBwGNmOwZ1S3T0U+oChOijOxPMrhnvFPPmvwIMdVJmgYkaif63RFdyIvPAY2aAQSZDYtamlJwIDPz/CZjoVFkvhMpczBxw00ggW6x6LzhV/yRfgsuCQWB7MSfNqW/2cy1Ur1TwCZWkdycGrupu+bPDCR/rPsE0O781R6LOS4id45KbLwpOWvvfwZFc6cYrf6dAu74oDgGScRre6hiUHX2dRwfexUXrNGOOR45RYBzZCkyB4VZ0Ocbh9QGhBE4hZHVAcAAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempyes\"],\"name\":\"Tempyes\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempyes",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "No",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempno",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAARVJREFUaEPtllEOwyAMQ9v7H3pTp1ExRnDjMECd+SaJeXEi9k2nSmAXlzoBgTGcITAC41sacowcM94xjwWhH5pC0xAKfgOxRCRgPWr42r1t08EgAbPgIF0QdLSbVwR44NTGktF4RVcTDlM0JfQUR3cteB6o+UPZuDMHCwY9tOwGEtrKh2JrnWdiPvKMAnMUbS1ppMP7UO/9L7hIkDWHXsdEwbTil3EMA0VgGqs+MkpyDAHWGiV2TbzyMcG/GCWkJbxM4Y+uuLACmDQmLThsM7w8Qv8YViSKK11R/oKZJg4Dgx5HC8kCcyBDYeTipxXuQdDI0aV5dwPTzW0CY9hOYP4ETLfVdTfHCEw3AholH0qNkhzjc8wTDFVBIYFY8GMAAAAASUVORK5CYII=\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempno\"],\"name\":\"Tempno\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempno",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "AreYouSureQuit_Text",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Are you sure you want to quit? \nYour progress will be lost.",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 60,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Moveable_Door",
-          "texture": "Tempdoor",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 5,
-              "friction": 0,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "platformType": "NormalPlatform",
-              "canBeGrabbed": false,
-              "yGrabOffset": 0
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Lose_Area",
-          "texture": "New image3",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": true,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 0.2,
-              "friction": 5,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
           "name": "Floating_Platform",
-          "texture": "New image4",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 1,
-              "friction": 0.3,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 1,
-              "masks": 1
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ]
+          "persistentUuid": "1fc1664f-16f4-4b96-9e91-c96361560b14",
+          "width": 192,
+          "x": 576,
+          "y": 448,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Collectable",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Tempcollect",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempcollect",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 61,
-                            "y": 0
-                          },
-                          {
-                            "x": 61,
-                            "y": 53
-                          },
-                          {
-                            "x": 0,
-                            "y": 53
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Floating_Platform",
+          "persistentUuid": "2cfb13c7-5979-45d0-9be2-34c5b4c87fa9",
+          "width": 192,
+          "x": 256,
+          "y": 320,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Restart",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Temprestart",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAWJJREFUaEPtl0sOwyAMRMn9D92IBZVlefwliaK4uzZgJs/DQI/RH5HA0VxkAg0GOKPBNJhYaLRjnI75CeM+CY++9ILCf2swYwwJwgT2OTged7wRjOT+UPpaYN4IZQIo60ZgysSV9pRFO1pfXkMK37nulZlSFm2A2VLfOpUczQkP2SL8akdKW8kjnN93kPMk93nqh2mTCVvqV8CsuVQIzyZJpFe4lXOoOVsuqTxLlmhNPH9mfefdl4SvMVOP5kZaC2mU9IRzE4FBRx56Ka2OBEYLd+5ANNYLJrUtrReqLJ6dS12rdTpb3wWqAsZjT5QxdOtoW21trchfFW+GqYAsMGtLIQgeEVpnNUDrmRayEWAupyBBUXtS0VZueBwWEg+u/vQ0s042uJ7HMbRz2RtxWmCUFLvPpJsRAZPV+ASUrNb/vDvAlEU+UaDBAOrZzHiiibeu2WDaMTHDtWPaMe2YGAEw+gSuCWEh0jQZCwAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Temprestart\"],\"name\":\"Temprestart\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Temprestart",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "AreYouSureRestart_Text",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Are you sure you want to restart? \nYour progress will be lost.",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 60,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Floating_Platform",
+          "persistentUuid": "b298fd77-cea3-4ebb-8a33-c9a248bbaae6",
+          "width": 192,
+          "x": 1152,
+          "y": 576,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
+      "objects": [],
       "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "folderName": "Buttons",
-            "children": [
-              {
-                "objectName": "Pause"
-              },
-              {
-                "objectName": "Resume"
-              },
-              {
-                "objectName": "Restart"
-              },
-              {
-                "objectName": "Main_Menu"
-              },
-              {
-                "objectName": "Yes"
-              },
-              {
-                "objectName": "No"
-              }
-            ]
-          },
-          {
-            "objectName": "Ground"
-          },
-          {
-            "objectName": "Floating_Platform"
-          },
-          {
-            "objectName": "Lose_Area"
-          },
-          {
-            "objectName": "Moveable_Door"
-          },
-          {
-            "objectName": "Snowball_Moveable"
-          },
-          {
-            "objectName": "Snowball_Static"
-          },
-          {
-            "objectName": "Player"
-          },
-          {
-            "objectName": "Pause_BG"
-          },
-          {
-            "objectName": "AreYouSureQuit_Text"
-          },
-          {
-            "objectName": "AreYouSureRestart_Text"
-          },
-          {
-            "objectName": "Collectable"
-          }
-        ]
+        "folderName": "__ROOT"
       },
       "events": [
         {
@@ -5632,7 +4451,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2531414001298649,
+        "zoomFactor": 0.30887412163426853,
         "windowMask": false
       },
       "objectsGroups": [
@@ -6010,8 +4829,8 @@
           "name": "Floating_Platform",
           "persistentUuid": "22483a9e-98d2-4fe2-a6d3-2b3df19b2c66",
           "width": 192,
-          "x": 192,
-          "y": 448,
+          "x": 960,
+          "y": 128,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6026,8 +4845,8 @@
           "name": "Floating_Platform",
           "persistentUuid": "71c0671e-534d-424a-9ac4-0ff3f4ba90ec",
           "width": 192,
-          "x": 1216,
-          "y": 576,
+          "x": 1344,
+          "y": 320,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -6042,8 +4861,8 @@
           "name": "Collectable",
           "persistentUuid": "181ca2c7-ba22-4155-88da-3510169fda32",
           "width": 128,
-          "x": 1216,
-          "y": 448,
+          "x": 1344,
+          "y": 192,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -6074,8 +4893,8 @@
           "name": "Collectable",
           "persistentUuid": "7b16191a-64c1-45af-ab6e-88f1eb5cd699",
           "width": 128,
-          "x": 256,
-          "y": 320,
+          "x": 1024,
+          "y": 0,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -6174,1242 +4993,91 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Ground",
-          "texture": "New image",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 1,
-              "friction": 0.3,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 16,
-              "masks": 16
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Snowball_Moveable",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Dynamic",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": false,
-              "shape": "Circle",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 0.5,
-              "friction": 20,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0,
-              "gravityScale": 1,
-              "layers": 16,
-              "masks": 16
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "platformType": "Jumpthru",
-              "canBeGrabbed": false,
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 62
-                          },
-                          {
-                            "x": 0,
-                            "y": 62
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Snowball_Static",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": true,
-              "shape": "Circle",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 0.2,
-              "friction": 5,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 62
-                          },
-                          {
-                            "x": 0,
-                            "y": 62
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Player",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Dynamic",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 5,
-              "friction": 5,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            },
-            {
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "ignoreDefaultControls": true,
-              "canGrabWithoutMoving": false,
-              "acceleration": 1500,
-              "canGoDownFromJumpthru": true,
-              "canGrabPlatforms": false,
-              "deceleration": 1500,
-              "gravity": 1000,
-              "jumpSpeed": 1000,
-              "jumpSustainTime": 0.2,
-              "ladderClimbingSpeed": 150,
-              "maxFallingSpeed": 700,
-              "maxSpeed": 300,
-              "slopeMaxAngle": 60,
-              "useLegacyTrajectory": false,
-              "xGrabTolerance": 10,
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite3",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite3",
-                      "points": [
-                        {
-                          "name": "Platform_Above",
-                          "x": 32.5,
-                          "y": -4
-                        },
-                        {
-                          "name": "Platform_Below",
-                          "x": 31,
-                          "y": 65.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Pause",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1.5,
-              "FocusedScale": 1.2,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 1.2,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite3",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":64,\\\"width\\\":64,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAIJJREFUeF7t1wERADAIAzGQNP/imJDPJPRGc9177yb8VgB+gBPQAeEOHCVIAQpQgAIUCCeAQQxiEIMYDCNgDGEQgxjEIAYxGE4AgxjEIAYxGEbAGsQgBjGIQQxiMJwABjGIQQxiMIyANYhBDGIQgxjEYDgBDGIQgxjEYBgBaxCDdQY/W2mYQWPOQyYAAAAASUVORK5CYII=\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAa9JREFUeF7tmtsOwjAMQ+H/PxqEBBKCjsZ2li3UPDe3Eycrg+tl8c918fovBmAFLE7AI9BQALeNnKlmUkYHQtsq/pUSXA9sMCh+lFSG3xHnNgAeye8BoRUAWpYbIzYrnoKe0aVZYhkxHsXN4pwWAJVYcNeMxAIBhw5XStMAvglERgBWmxWQcKmJdKYKtBWA3j+qOlMVp1wBEfnDSQlPGziW2hkDAJboKWFXJQVLs8tFKDoCfwkAKd4A0OdzhxGwAoAngEfAI6C/I4yOHPRohw5/SD6aUNa7wWg8qCbosABAifMKuzSAaPHwslU6s1tSwh1geQBwQ2GDt+6cUQFwPbABuQiVOLuCVhKL/loDzyUJmYpTAaAiBlU8bQTuAQMAvzR9Ho/uAAo0ZQQoQPW/+55RE5x1R/VvAMH/BdD7TO2QFTBZcCrg6AjQcWjDZ+EVCohAoOugDQMAVN/v4voFWoojGU8WlOo7ch+QY8gOfkDI8C3eoebmGUlW/lN0XhF4wgBAYKPjyysggeFxLjJG4LjsEyIbQALE1i6sgNbtS0jeCkiA2NqFFdC6fQnJL6+AO2ZGWEGwZiGqAAAAAElFTkSuQmCC\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"NewSprite4\"],\"name\":\"NewSprite3\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite4",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Pause_BG",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Pause_BG",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Pause_BG",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Resume",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempresume",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAATtJREFUaEPtmNsOwzAIQ9f//+hNkVYJMRObpJVWQR97SeDEMaTHqy9I4GgumECDCZTRYBpMzjSQYt5giHLKisD4+wNWKTgZMENIZeCoYAaUUqpRwZy+U1YxXhXWiMtAQZ7RFelbkstXn6i7QWBKVZ8Gk2t8f/oSpfqUMOTIY2Y9i302q2J+S2b6oF34ygJPNZQFg0DYMVaB2iB9Ur5SsrZhtnDyhppVJZQkm/QqMNm4PFh1sUJQ2QDY6v0LGJswU5j0a9MrAvkEK+cRHKa2M0CmVH9uu6UpZQ0eMjHF2FhyqrIiqe9+T72GgYlO1WxLoe8s0EyFokmAF7bHV8CsBqacxZb2vxCQouqlci3MHb6iBrXbq7AY1TjS5ssmfsrzJUB3Sfkp0OQ+5vEJXZVAKyYg2WAaTG6TtWICXh+5vF4hsO6SkQAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[]}}\",\"resourceNames\":[\"Tempresume\"],\"name\":\"Tempresume\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempresume",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Main_Menu",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempmainmenu",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAU1JREFUaEPtmO0OwyAIRdf3f+gtLiUhhE+L0q3sz9ZMUY4XhB6v/rAEjubCE2gwgjIaTIOJJY1WTCumFRMj4FTM+xz3+BCjAADM4DP+eywoDGZAgGf43WBOdVigUuL3F4xIIMbeOQVJPlnKwraobXgG27fIbzR0sOOWMzCW5iUOnmSLA0rHlggsAkY6aUjS+Js6w4GBBG+NfRwYLWTKVaMpRssneB49ec4pb1ji8CzNNavAYFhRKCWhQxedAePZeORG89jbPmYVmO2OZC/YYIwmsvwWyD7xq/Z2KMZTAEpFYVk1vPpKpJWtV5naTWa1H1fF8p2/Awztx6SbUWpHom1DCrgKMNw7IA0et0ctPL2qVJW1G4yVS7TCkFNURpXNAroDGK45xa0Bl4C1AjKl0l4NJiURGkY01UyH1T+AscJzysepSTtkUL1GgxFO4APbu2MhrpdQXgAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempmainmenu\"],\"name\":\"Tempmainmenu\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempmainmenu",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Yes",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "folded": true,
-              "name": "Confirm",
-              "type": "number",
-              "value": 0
-            }
-          ],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempyes",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAXFJREFUaEPtmNsOwyAMQ9n/f/QmpDEhlBDbpKqqpY9bAsmxubSvVo9J4FVcbAIFxnFGgUkA826t/Q1IptEC47irg+nPU2Aq9f5aZ5rsSaxr2PjMQ3KAYcWk1R9Fo80eKZZA6BYwkQp3QxnuHnzZlUHtF7OIsxqWuL0Q1FkJ5jCHWGuk4FDBZAcFxgBmQbFchgqj5squQQtjzOI5Zf092od2myfjxhHL5Mh7zA6U5xZLhB3EaINHxZrBwGNmOwZ1S3T0U+oChOijOxPMrhnvFPPmvwIMdVJmgYkaif63RFdyIvPAY2aAQSZDYtamlJwIDPz/CZjoVFkvhMpczBxw00ggW6x6LzhV/yRfgsuCQWB7MSfNqW/2cy1Ur1TwCZWkdycGrupu+bPDCR/rPsE0O781R6LOS4id45KbLwpOWvvfwZFc6cYrf6dAu74oDgGScRre6hiUHX2dRwfexUXrNGOOR45RYBzZCkyB4VZ0Ocbh9QGhBE4hZHVAcAAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempyes\"],\"name\":\"Tempyes\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempyes",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "No",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Tempno",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAARVJREFUaEPtllEOwyAMQ9v7H3pTp1ExRnDjMECd+SaJeXEi9k2nSmAXlzoBgTGcITAC41sacowcM94xjwWhH5pC0xAKfgOxRCRgPWr42r1t08EgAbPgIF0QdLSbVwR44NTGktF4RVcTDlM0JfQUR3cteB6o+UPZuDMHCwY9tOwGEtrKh2JrnWdiPvKMAnMUbS1ppMP7UO/9L7hIkDWHXsdEwbTil3EMA0VgGqs+MkpyDAHWGiV2TbzyMcG/GCWkJbxM4Y+uuLACmDQmLThsM7w8Qv8YViSKK11R/oKZJg4Dgx5HC8kCcyBDYeTipxXuQdDI0aV5dwPTzW0CY9hOYP4ETLfVdTfHCEw3AholH0qNkhzjc8wTDFVBIYFY8GMAAAAASUVORK5CYII=\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Tempno\"],\"name\":\"Tempno\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempno",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "AreYouSureQuit_Text",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Are you sure you want to quit? \nYour progress will be lost.",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 60,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Moveable_Door",
-          "texture": "Tempdoor",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 5,
-              "friction": 0,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "platformType": "NormalPlatform",
-              "canBeGrabbed": false,
-              "yGrabOffset": 0
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Lose_Area",
-          "texture": "New image3",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": false,
-              "canSleep": true,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 0.2,
-              "friction": 5,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
           "name": "Floating_Platform",
-          "texture": "New image4",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics2",
-              "type": "Physics2::Physics2Behavior",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": true,
-              "canSleep": false,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "polygonOrigin": "Center",
-              "vertices": [],
-              "density": 1,
-              "friction": 0.3,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 1,
-              "masks": 1
-            },
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ]
+          "persistentUuid": "1fc1664f-16f4-4b96-9e91-c96361560b14",
+          "width": 192,
+          "x": 576,
+          "y": 512,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Floating_Platform",
+          "persistentUuid": "2cfb13c7-5979-45d0-9be2-34c5b4c87fa9",
+          "width": 192,
+          "x": 256,
+          "y": 320,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Floating_Platform",
+          "persistentUuid": "b298fd77-cea3-4ebb-8a33-c9a248bbaae6",
+          "width": 192,
+          "x": 1152,
+          "y": 576,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
+          "layer": "",
           "name": "Collectable",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Tempcollect",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Tempcollect",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 61,
-                            "y": 0
-                          },
-                          {
-                            "x": 61,
-                            "y": 53
-                          },
-                          {
-                            "x": 0,
-                            "y": 53
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "persistentUuid": "6f90cf0c-1e6e-470b-a2bd-eecb714af6c2",
+          "width": 128,
+          "x": 256,
+          "y": 192,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Restart",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 0
-            },
-            {
-              "name": "ButtonScaleTween",
-              "type": "ButtonStates::ButtonScaleTween",
-              "ButtonFSM": "ButtonFSM",
-              "Tween": "Tween",
-              "IdleScale": 1,
-              "FocusedScale": 1,
-              "FadeInDuration": 0.1,
-              "FadeOutDuration": 0.2,
-              "PressedScale": 0.95,
-              "FadeInEasing": "easeInOutQuad",
-              "FadeOutEasing": "easeInOutQuad",
-              "PreviousState": "Idle"
-            },
-            {
-              "name": "Tween",
-              "type": "Tween::TweenBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Temprestart",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Animation\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":70,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAGtJREFUaEPt1LERACAMxLCw/9AwAFC4FzWVT/m1Z/Z4V4ElzFuFMJ9rEUaYNqTEEENMK0BM62VjiCGmFSCm9bIxxBDTChDTetkYYohpBYhpvWwMMcS0AsS0XjaGGGJaAWJaLxtDDDGtwOf3AaPsP+HX980WAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAAAXNSR0IArs4c6QAAAWJJREFUaEPtl0sOwyAMRMn9D92IBZVlefwliaK4uzZgJs/DQI/RH5HA0VxkAg0GOKPBNJhYaLRjnI75CeM+CY++9ILCf2swYwwJwgT2OTged7wRjOT+UPpaYN4IZQIo60ZgysSV9pRFO1pfXkMK37nulZlSFm2A2VLfOpUczQkP2SL8akdKW8kjnN93kPMk93nqh2mTCVvqV8CsuVQIzyZJpFe4lXOoOVsuqTxLlmhNPH9mfefdl4SvMVOP5kZaC2mU9IRzE4FBRx56Ka2OBEYLd+5ANNYLJrUtrReqLJ6dS12rdTpb3wWqAsZjT5QxdOtoW21trchfFW+GqYAsMGtLIQgeEVpnNUDrmRayEWAupyBBUXtS0VZueBwWEg+u/vQ0s042uJ7HMbRz2RtxWmCUFLvPpJsRAZPV+ASUrNb/vDvAlEU+UaDBAOrZzHiiibeu2WDaMTHDtWPaMe2YGAEw+gSuCWEh0jQZCwAAAABJRU5ErkJggg==\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[\"Temprestart\"],\"name\":\"Temprestart\"}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Temprestart",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 0
-                          },
-                          {
-                            "x": 70,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "AreYouSureRestart_Text",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Are you sure you want to restart? \nYour progress will be lost.",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 60,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Floating_Platform",
+          "persistentUuid": "b21efb59-aa2b-4ba2-85ff-13331bbf67bd",
+          "width": 192,
+          "x": 640,
+          "y": 192,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
+      "objects": [],
       "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "folderName": "Buttons",
-            "children": [
-              {
-                "objectName": "Pause"
-              },
-              {
-                "objectName": "Resume"
-              },
-              {
-                "objectName": "Restart"
-              },
-              {
-                "objectName": "Main_Menu"
-              },
-              {
-                "objectName": "Yes"
-              },
-              {
-                "objectName": "No"
-              }
-            ]
-          },
-          {
-            "objectName": "Ground"
-          },
-          {
-            "objectName": "Floating_Platform"
-          },
-          {
-            "objectName": "Lose_Area"
-          },
-          {
-            "objectName": "Moveable_Door"
-          },
-          {
-            "objectName": "Snowball_Moveable"
-          },
-          {
-            "objectName": "Snowball_Static"
-          },
-          {
-            "objectName": "Player"
-          },
-          {
-            "objectName": "Pause_BG"
-          },
-          {
-            "objectName": "AreYouSureQuit_Text"
-          },
-          {
-            "objectName": "AreYouSureRestart_Text"
-          },
-          {
-            "objectName": "Collectable"
-          }
-        ]
+        "folderName": "__ROOT"
       },
       "events": [
         {
@@ -10183,12 +7851,58 @@
             },
             {
               "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "GameStateLable",
+                "\"UI_UX\""
+              ]
+            },
+            {
+              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
                 "Version",
                 "=",
                 "999"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "GameStateLable",
+                "=",
+                "999"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SystemInfo::IsPreview"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "GameStateLable",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -10424,6 +8138,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Game Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10707,6 +8422,7 @@
               "colorG": 255,
               "colorR": 255,
               "creationTime": 0,
+              "folded": true,
               "name": "Snowball Logic",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
