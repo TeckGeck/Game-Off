@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.0.011",
+    "version": "0.0.013",
     "name": "Game off",
     "description": "",
     "author": "",
@@ -483,6 +483,26 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets/Audio/uiHover.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/uiHover.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\uiHover.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/pauseOpen.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\pauseOpen.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -1878,6 +1898,22 @@
       "name": "footstepSound",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "Data",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Music",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "name": "Sound",
+          "type": "number",
+          "value": 50
+        }
+      ]
     }
   ],
   "layouts": [
@@ -2750,7 +2786,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Main Menu",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2770,6 +2805,26 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Audio/uiForward.ogg",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -2797,6 +2852,26 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Audio/pauseClose.ogg",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.3"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Quit"
@@ -2844,6 +2919,18 @@
                     "\"UI_UX\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Audio/uiForward.ogg",
+                    "",
+                    "",
+                    ""
+                  ]
                 }
               ]
             },
@@ -2884,6 +2971,18 @@
                     "\"UI_UX\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Audio/uiForward.ogg",
+                    "",
+                    "",
+                    ""
+                  ]
                 }
               ]
             },
@@ -2922,6 +3021,18 @@
                     "CameraUI_Box",
                     "",
                     "\"UI_UX\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/Audio/uiBack.ogg",
+                    "",
+                    "",
                     ""
                   ]
                 }
@@ -3101,7 +3212,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.25314140012986497,
+        "zoomFactor": 0.2291680161074902,
         "windowMask": false
       },
       "objectsGroups": [
@@ -7155,7 +7266,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7242,7 +7352,7 @@
                           },
                           "parameters": [
                             "",
-                            "Talking",
+                            "assets\\Audio\\uiHover.ogg",
                             "2",
                             "",
                             "GlobalVariable(Data.Sound.SFX)/3",
@@ -7359,7 +7469,6 @@
           "parameters": []
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7371,17 +7480,33 @@
                 "ButtonFSM",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Scene"
+                "value": "PlaySound"
               },
               "parameters": [
                 "",
-                "\"Game Scene 1\"",
+                "assets/Audio/uiForward.ogg",
+                "",
+                "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.2"
               ]
             }
           ],
@@ -7871,6 +7996,33 @@
                     "",
                     "\"pointer\"",
                     ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/Audio/uiHover.ogg",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -9456,6 +9608,12 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -9482,13 +9640,14 @@
                 },
                 {
                   "type": {
-                    "value": "PlaySound"
+                    "value": "PlaySoundCanal"
                   },
                   "parameters": [
                     "",
-                    "assets/Audio/pauseOpen.ogg",
+                    "assets\\Audio\\pauseOpen.ogg",
+                    "2",
                     "",
-                    "",
+                    "50",
                     ""
                   ]
                 }
@@ -9572,41 +9731,6 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "ButtonStates::ButtonFSM::IsHovered"
-                  },
-                  "parameters": [
-                    "Resume",
-                    "ButtonFSM",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "assets/Audio/uiHover.ogg",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
                     "value": "VarObjet"
                   },
                   "parameters": [
@@ -9659,41 +9783,6 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "ButtonStates::ButtonFSM::IsHovered"
-                  },
-                  "parameters": [
-                    "Main_Menu",
-                    "ButtonFSM",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "assets/Audio/uiHover.ogg",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
                     "value": "VarObjet"
                   },
                   "parameters": [
@@ -9733,42 +9822,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets/Audio/pauseClose.ogg",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ButtonStates::ButtonFSM::IsHovered"
-                  },
-                  "parameters": [
-                    "Restart",
-                    "ButtonFSM",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "assets/Audio/uiHover.ogg",
+                    "assets/Audio/uiForward.ogg",
                     "",
                     "",
                     ""
@@ -9804,23 +9858,31 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Scene"
+                    "value": "PlaySound"
                   },
                   "parameters": [
                     "",
-                    "\"Main Menu\"",
+                    "assets/Audio/pauseClose.ogg",
+                    "",
+                    "",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "PlaySound"
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
                   },
                   "parameters": [
                     "",
-                    "assets/Audio/uiForward.ogg",
-                    "",
-                    "",
+                    "\"Main Menu\"",
                     ""
                   ]
                 }
@@ -9854,59 +9916,105 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Game Scene\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "PlaySound"
                   },
                   "parameters": [
                     "",
-                    "assets/Audio/uiForward.ogg",
+                    "assets/Audio/pauseClose.ogg",
                     "",
                     "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ButtonStates::ButtonFSM::IsHovered"
-                  },
-                  "parameters": [
-                    "Yes",
-                    "ButtonFSM",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
+                    "value": "Wait"
                   },
-                  "parameters": []
+                  "parameters": [
+                    "0.3"
+                  ]
                 }
               ],
-              "actions": [
+              "events": [
                 {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "assets/Audio/uiHover.ogg",
-                    "",
-                    "",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Game_State",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Game Scene 1\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Game_State",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Game Scene 2\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Game_State",
+                        "=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Game Scene 3\"",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -9956,41 +10064,6 @@
                   "parameters": [
                     "",
                     "assets/Audio/uiBack.ogg",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "ButtonStates::ButtonFSM::IsHovered"
-                  },
-                  "parameters": [
-                    "No",
-                    "ButtonFSM",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "assets/Audio/uiHover.ogg",
                     "",
                     "",
                     ""
