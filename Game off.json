@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.0.013",
+    "version": "0.0.014",
     "name": "Game off",
     "description": "",
     "author": "",
@@ -507,6 +507,546 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00001.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00002.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00003.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00004.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00005.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00006.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00007.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00008.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00009.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00010.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00011.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00012.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00012.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00013.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00013.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00014.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00014.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00015.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00015.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00016.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00016.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00017.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00017.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00018.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00018.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00019.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00019.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00020.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00020.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00021.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00021.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00022.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00022.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00023.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00023.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00024.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00025.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00025.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00026.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00026.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00027.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00027.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00028.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00028.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00029.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00029.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Deck Jump_00030.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Deck Jump_00030.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00001.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00002.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00003.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00004.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00005.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00006.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00007.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00008.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00009.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00010.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00011.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00012.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00012.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00013.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00013.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00014.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00014.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00015.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00015.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00016.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00016.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00017.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00017.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00018.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00018.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00019.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00019.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00020.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00020.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00021.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00021.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00022.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00022.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00023.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00023.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00025.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00025.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00026.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00026.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00027.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00027.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00028.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00028.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00029.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00029.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Frames/Jump/Deck Jump_00030.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Frames\\Jump\\Deck Jump_00030.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -923,7 +1463,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Player",
       "type": "Sprite",
@@ -957,6 +1497,7 @@
         {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "jumpSpeed": 1100,
           "ignoreDefaultControls": true,
           "canGrabWithoutMoving": false,
           "acceleration": 1500,
@@ -964,7 +1505,6 @@
           "canGrabPlatforms": false,
           "deceleration": 1500,
           "gravity": 1000,
-          "jumpSpeed": 1000,
           "jumpSustainTime": 0.2,
           "ladderClimbingSpeed": 150,
           "maxFallingSpeed": 700,
@@ -977,7 +1517,7 @@
       ],
       "animations": [
         {
-          "name": "NewSprite3",
+          "name": "Idle",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -987,19 +1527,8 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
-                  "points": [
-                    {
-                      "name": "Platform_Above",
-                      "x": 32.5,
-                      "y": -4
-                    },
-                    {
-                      "name": "Platform_Below",
-                      "x": 31,
-                      "y": 65.5
-                    }
-                  ],
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00001.png",
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -1018,16 +1547,1108 @@
                         "y": 0
                       },
                       {
-                        "x": 64,
+                        "x": 250,
                         "y": 0
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 250,
+                        "y": 250
                       },
                       {
                         "x": 0,
-                        "y": 64
+                        "y": 250
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Jump",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00001.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00002.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00003.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00004.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00005.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00006.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00007.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00008.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00009.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00010.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00011.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00012.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00013.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00014.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00015.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00016.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00017.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00018.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00019.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00020.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00021.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00022.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00023.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00024.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00025.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00026.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00027.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00028.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00029.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Frames\\Jump\\Deck Jump_00030.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 0
+                      },
+                      {
+                        "x": 250,
+                        "y": 250
+                      },
+                      {
+                        "x": 0,
+                        "y": 250
                       }
                     ]
                   ]
@@ -3212,7 +4833,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2291680161074902,
+        "zoomFactor": 0.3768772036750915,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3329,14 +4950,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 128,
           "layer": "",
           "name": "Player",
           "persistentUuid": "47211fe0-daef-43df-a809-30975a2e024f",
-          "width": 0,
+          "width": 128,
           "x": 640,
-          "y": 832,
+          "y": 704,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -8386,6 +10008,17 @@
             },
             {
               "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetSize"
+              },
+              "parameters": [
+                "Player",
+                "Resizable",
+                "100",
+                "100"
+              ]
+            },
+            {
+              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
@@ -8458,7 +10091,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Game Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8532,6 +10164,16 @@
                         "=",
                         "RandomInRange(1, 4)"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Flippable",
+                        "no"
+                      ]
                     }
                   ]
                 },
@@ -8585,6 +10227,61 @@
                         "Player",
                         "PlatformerObject"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Flippable",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsJumping"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation",
+                        "=",
+                        "\"Jump\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/Audio/Jump.ogg",
+                        "",
+                        "",
+                        "RandomFloatInRange(1, 2)"
+                      ]
                     }
                   ]
                 },
@@ -8636,6 +10333,12 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -8648,11 +10351,17 @@
                         "PlatformerObject"
                       ]
                     }
-                  ],
-                  "events": [
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
                         {
                           "type": {
                             "value": "PlatformBehavior::IsOnFloor"
@@ -8664,27 +10373,35 @@
                         },
                         {
                           "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "PlaySound"
+                            "value": "CollisionPoint"
                           },
                           "parameters": [
-                            "",
-                            "assets/Audio/Jump.ogg",
-                            "",
-                            "",
-                            "RandomFloatInRange(1, 2)"
+                            "Snowball_Moveable",
+                            "Player.PointX(\"Platform_Below\")",
+                            "Player.PointY(\"Platform_Below\")"
                           ]
                         }
                       ]
                     }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation",
+                        "=",
+                        "\"Idle\""
+                      ]
+                    }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
                 }
               ],
               "parameters": []
@@ -8694,238 +10411,240 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Player Sound",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
-              "events": [],
-              "parameters": []
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "events": [
                 {
-                  "type": {
-                    "value": "PlatformBehavior::IsOnFloor"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject"
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsOnFloor"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "footstepSound",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "RepeatEveryXSeconds::Repeat"
+                          },
+                          "parameters": [
+                            "",
+                            "\"fsRepeat\"",
+                            "RandomFloatInRange(0.1, 0.2)",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/Audio/fs01.ogg",
+                            "",
+                            "",
+                            "RandomFloatInRange(2.5, 3)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "footstepSound",
+                            "=",
+                            "RandomInRange(1, 4)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "footstepSound",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "RepeatEveryXSeconds::Repeat"
+                          },
+                          "parameters": [
+                            "",
+                            "\"fsRepeat\"",
+                            "RandomFloatInRange(0.1, 0.2)",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/Audio/fs02.ogg",
+                            "",
+                            "",
+                            "RandomFloatInRange(2.5, 3)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "footstepSound",
+                            "=",
+                            "RandomInRange(1, 4)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "footstepSound",
+                            "=",
+                            "3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "RepeatEveryXSeconds::Repeat"
+                          },
+                          "parameters": [
+                            "",
+                            "\"fsRepeat\"",
+                            "RandomFloatInRange(0.1, 0.2)",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/Audio/fs03.ogg",
+                            "",
+                            "",
+                            "RandomFloatInRange(2.5, 3)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "footstepSound",
+                            "=",
+                            "RandomInRange(1, 4)"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "footstepSound",
+                            "=",
+                            "4"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "RepeatEveryXSeconds::Repeat"
+                          },
+                          "parameters": [
+                            "",
+                            "\"fsRepeat\"",
+                            "RandomFloatInRange(0.1, 0.2)",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/Audio/fs04.ogg",
+                            "",
+                            "",
+                            "RandomFloatInRange(2.5, 3)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "footstepSound",
+                            "=",
+                            "RandomInRange(1, 4)"
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "VarGlobal"
-                      },
-                      "parameters": [
-                        "footstepSound",
-                        "=",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "RepeatEveryXSeconds::Repeat"
-                      },
-                      "parameters": [
-                        "",
-                        "\"fsRepeat\"",
-                        "RandomFloatInRange(0.1, 0.2)",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "assets/Audio/fs01.ogg",
-                        "",
-                        "",
-                        "RandomFloatInRange(2.5, 3)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarGlobal"
-                      },
-                      "parameters": [
-                        "footstepSound",
-                        "=",
-                        "RandomInRange(1, 4)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "VarGlobal"
-                      },
-                      "parameters": [
-                        "footstepSound",
-                        "=",
-                        "2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "RepeatEveryXSeconds::Repeat"
-                      },
-                      "parameters": [
-                        "",
-                        "\"fsRepeat\"",
-                        "RandomFloatInRange(0.1, 0.2)",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "assets/Audio/fs02.ogg",
-                        "",
-                        "",
-                        "RandomFloatInRange(2.5, 3)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarGlobal"
-                      },
-                      "parameters": [
-                        "footstepSound",
-                        "=",
-                        "RandomInRange(1, 4)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "VarGlobal"
-                      },
-                      "parameters": [
-                        "footstepSound",
-                        "=",
-                        "3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "RepeatEveryXSeconds::Repeat"
-                      },
-                      "parameters": [
-                        "",
-                        "\"fsRepeat\"",
-                        "RandomFloatInRange(0.1, 0.2)",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "assets/Audio/fs03.ogg",
-                        "",
-                        "",
-                        "RandomFloatInRange(2.5, 3)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarGlobal"
-                      },
-                      "parameters": [
-                        "footstepSound",
-                        "=",
-                        "RandomInRange(1, 4)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "VarGlobal"
-                      },
-                      "parameters": [
-                        "footstepSound",
-                        "=",
-                        "4"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "RepeatEveryXSeconds::Repeat"
-                      },
-                      "parameters": [
-                        "",
-                        "\"fsRepeat\"",
-                        "RandomFloatInRange(0.1, 0.2)",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "assets/Audio/fs04.ogg",
-                        "",
-                        "",
-                        "RandomFloatInRange(2.5, 3)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarGlobal"
-                      },
-                      "parameters": [
-                        "footstepSound",
-                        "=",
-                        "RandomInRange(1, 4)"
-                      ]
-                    }
-                  ]
-                }
-              ]
+              "parameters": []
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -9385,6 +11104,17 @@
                       "actions": [
                         {
                           "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Animation",
+                            "=",
+                            "\"Idle\""
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "Physics2::SetStatic"
                           },
                           "parameters": [
@@ -9521,6 +11251,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "UI/Pause",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
