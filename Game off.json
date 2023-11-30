@@ -1047,6 +1047,56 @@
         "name": "assets\\Frames\\Jump\\Deck Jump_00030.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/Audio/bgm/titleBGM.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/Audio/bgm/titleBGM.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/bgm/cutsceneBGM.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/Audio/bgm/cutsceneBGM.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/bgm/level1BGM.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/Audio/bgm/level1BGM.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/bgm/level2BGM.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/Audio/bgm/level2BGM.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/bgm/level3BGM.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/Audio/bgm/level3BGM.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4384,6 +4434,18 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/Audio/bgm/titleBGM.ogg",
+                "yes",
+                "35",
+                ""
+              ]
             }
           ]
         },
@@ -5403,6 +5465,31 @@
             "includeConfig": 0
           },
           "target": "Debug"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/Audio/bgm/level1BGM.ogg",
+                "yes",
+                "35",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -6178,6 +6265,31 @@
             "includeConfig": 0
           },
           "target": "Debug"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/Audio/bgm/level2BGM.ogg",
+                "",
+                "35",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -6985,6 +7097,31 @@
             "includeConfig": 0
           },
           "target": "Debug"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "assets/Audio/bgm/level3BGM.ogg",
+                "yes",
+                "35",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -7997,6 +8134,18 @@
               },
               "parameters": [
                 "DialogueCursor"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/Audio/bgm/cutsceneBGM.ogg",
+                "yes",
+                "35",
+                ""
               ]
             }
           ],
